@@ -1,9 +1,0 @@
-.img-under-constr {
-    object-fit: scale-down;
-    background-size: auto;
-}
-
-body {
-    background: url(../img/unc.jpg) no-repeat;
-    background-size: 100%;
-}
