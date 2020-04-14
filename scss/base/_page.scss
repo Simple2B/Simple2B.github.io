@@ -26,6 +26,9 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  // font-style: ;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
   @include heading-font;
 }
 
