@@ -33,9 +33,9 @@
      showgrid="true"
      units="px"
      inkscape:window-width="1103"
-     inkscape:window-height="831"
+     inkscape:window-height="833"
      inkscape:window-x="652"
-     inkscape:window-y="71"
+     inkscape:window-y="69"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -60,15 +60,16 @@
      transform="translate(0,-212.33332)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.93333244px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="3.3906579"
-       y="281.79581"
-       id="text4006"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.73446465px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26147601"
+       x="4.9731312"
+       y="278.48636"
+       id="text4006"
+       transform="scale(0.98825583,1.0118837)"><tspan
          sodipodi:role="line"
          id="tspan4004"
-         x="3.3906579"
-         y="281.79581"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.93333244px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';stroke-width:0.26458332">Simple2B</tspan></text>
+         x="4.9731312"
+         y="278.48636"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.73446465px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';stroke-width:0.26147601">Simple2B</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4008"
@@ -96,7 +97,7 @@
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:1.92770934;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 76.729166,220.27084 V 289.0625"
+       d="M 78.316667,220.27084 V 289.0625"
        id="path4883"
        inkscape:connector-curvature="0" />
   </g>
