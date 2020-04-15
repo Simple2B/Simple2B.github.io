@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="400"
-   height="400"
-   viewBox="0 0 105.83333 105.83334"
+   width="320"
+   height="320"
+   viewBox="0 0 84.666664 84.666672"
    version="1.1"
    id="svg4002"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="logo320.svg">
   <defs
      id="defs3996" />
   <sodipodi:namedview
@@ -33,9 +33,9 @@
      showgrid="true"
      units="px"
      inkscape:window-width="1103"
-     inkscape:window-height="831"
+     inkscape:window-height="833"
      inkscape:window-x="652"
-     inkscape:window-y="71"
+     inkscape:window-y="69"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -57,22 +57,24 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-191.16665)">
+     transform="translate(0,-212.33332)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:16.93333244px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="6.4144692"
-       y="273.48029"
-       id="text4006"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.73446465px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26147601"
+       x="4.9731312"
+       y="278.48636"
+       id="text4006"
+       transform="scale(0.98825583,1.0118837)"><tspan
          sodipodi:role="line"
          id="tspan4004"
-         x="6.4144692"
-         y="273.48029"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.93333244px;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';stroke-width:0.26458332">Simple2B</tspan></text>
+         x="4.9731312"
+         y="278.48636"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.73446465px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';stroke-width:0.26147601">Simple2B</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4008"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,0,193.8125)"><flowRegion
          id="flowRegion4010"><rect
            id="rect4012"
            width="19.192898"
@@ -81,7 +83,7 @@
            y="223.2233" /></flowRegion><flowPara
          id="flowPara4014"></flowPara></flowRoot>    <g
        id="g4877"
-       transform="matrix(1.1829451,0,0,1.1829451,-16.863093,-30.905452)">
+       transform="matrix(1.1829451,0,0,1.1829451,-32.738093,-22.967947)">
       <path
          inkscape:connector-curvature="0"
          id="path4018-4-6"
@@ -95,7 +97,7 @@
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:1.92770934;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 92.604166,212.33332 v 68.79166"
+       d="M 78.316667,220.27084 V 289.0625"
        id="path4883"
        inkscape:connector-curvature="0" />
   </g>
