@@ -135,6 +135,10 @@ img::-moz-selection {
   color: #3d8b40;
 }
 
+#mainNav .navbar-brand img {
+  height: 96px;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
