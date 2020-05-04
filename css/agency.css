@@ -6,7 +6,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: sofiapro-light;
+  font-family: 'Montserrat';
   src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
 }
 
@@ -35,7 +35,7 @@ h6 {
   font-weight: 700;
   -webkit-text-decoration-style: solid;
   text-decoration-style: solid;
-  font-family: sofiapro-light;
+  font-family: 'Montserrat';
   src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
 }
 
@@ -216,7 +216,7 @@ header.masthead .intro-text .intro-heading {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 25px;
-    font-family: sofiapro-light;
+    font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
   header.masthead .intro-text .intro-heading {
@@ -224,7 +224,7 @@ header.masthead .intro-text .intro-heading {
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
-    font-family: sofiapro-light;
+    font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
 }
