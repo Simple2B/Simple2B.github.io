@@ -11,3 +11,11 @@
 @mixin heading-font {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
+@mixin greeting-font {
+  font-family: sofiapro-light;
+        //font-weight: 100%;
+        //font-style: normal;
+        //src: url('#{$file-path}.eot');
+        src: url('scss/fonts/Fonts/sofiapro-light.otf') format('opentype');//url('https://drive.google.com/open?id=1lFHHrveOV8R0632XRoVDbA2d8-ieo_0Y') format('woff'), url('https://drive.google.com/open?id=1UQpOleeNXb82cf9mN90hLt_tEgRFqGUE') format('woff2'), url('scss/fonts/Fonts/sofiapro-light.otf') format('opentype');
+}
+
