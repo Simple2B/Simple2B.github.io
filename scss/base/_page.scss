@@ -1,7 +1,7 @@
 // Global styling for this template
 body {
   overflow-x: hidden;
-  @include heading-font;
+  @include greeting-font;
 }
 
 p {
@@ -42,7 +42,7 @@ h6 {
     font-weight: 400;
     margin-bottom: 75px;
     text-transform: none;
-    @include serif-font;
+    @include greeting-font;
   }
 }
 @media(min-width:768px) {
