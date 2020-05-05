@@ -14,6 +14,16 @@ section#about {
     text-transform: none;
     color: $white;
   }
+
+  ul.portfolio{
+    ul{
+      padding: 12px 0;
+    }
+    li{
+      list-style-type: none;
+      padding: 12px 0;
+    }
+  }
 }
 
 

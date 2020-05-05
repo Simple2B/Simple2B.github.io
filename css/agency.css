@@ -6,8 +6,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat';
-  src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 p {
@@ -263,6 +262,15 @@ section#about .service-heading {
   margin: 15px 0;
   text-transform: none;
   color: #fff;
+}
+
+section#about ul.portfolio ul {
+  padding: 12px 0;
+}
+
+section#about ul.portfolio li {
+  list-style-type: none;
+  padding: 12px 0;
 }
 
 section#contact {
