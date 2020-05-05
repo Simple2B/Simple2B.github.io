@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="320"
+   height="320"
+   viewBox="0 0 84.666664 84.666672"
+   version="1.1"
+   id="svg4002"
+   inkscape:version="1.0rc1 (09960d6, 2020-04-09)"
+   sodipodi:docname="logo_new.svg">
+  <defs
+     id="defs3996" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="276.54703"
+     inkscape:cy="202.11188"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1440"
+     inkscape:window-height="874"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="0"
+     inkscape:document-rotation="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4879" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3999">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-212.33332)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4008"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,0,193.8125)"><flowRegion
+         id="flowRegion4010"><rect
+           id="rect4012"
+           width="19.192898"
+           height="52.527931"
+           x="126.26907"
+           y="223.2233" /></flowRegion><flowPara
+         id="flowPara4014" /></flowRoot>
+    <g
+       id="g4877"
+       transform="matrix(1.1829451,0,0,1.1829451,-36.442262,-22.967947)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4018-4-6"
+         d="m 63.211659,239.17108 c -3.108317,-0.5403 -5.808768,-2.05457 -8.124405,-4.55573 -5.04085,-5.44472 -4.822222,-13.77551 0.501221,-19.09895 7.395721,-7.39572 20.006099,-4.49015 23.406437,5.39309 3.386291,9.84243 -5.443657,20.05889 -15.783253,18.26159 z"
+         style="fill:#51b7c3;fill-opacity:1;stroke-width:0.26727" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4018-4"
+         d="m 70.171411,239.17109 c -3.108317,-0.5403 -5.808768,-2.05457 -8.124404,-4.55573 -5.04085,-5.44472 -4.822222,-13.77551 0.501221,-19.09895 7.39572,-7.39572 20.006098,-4.49015 23.406436,5.39309 3.386289,9.84243 -5.443657,20.05889 -15.783253,18.26159 z"
+         style="fill:#70d6e3;fill-opacity:0.627451;stroke-width:0.26727" />
+    </g>
+    <text
+       id="text42"
+       y="276.58929"
+       x="7.9374995"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11110000000000042px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';stroke-width:0.264583;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';stroke-width:0.264583;"
+         y="276.58929"
+         x="7.9374995"
+         id="tspan40"
+         sodipodi:role="line">Simple2B</tspan></text>
+    <text
+       id="text46"
+       y="268.24649"
+       x="70.374855"
+       style="font-size:54.31839999999999691px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Ultra-Light';stroke-width:0.565816;font-weight:200;font-style:normal;font-stretch:normal;font-variant:normal;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.565816;-inkscape-font-specification:'Helvetica Neue Ultra-Light';font-family:'Helvetica Neue';font-weight:200;font-style:normal;font-stretch:normal;font-variant:normal;"
+         y="268.24649"
+         x="70.374855"
+         id="tspan44"
+         sodipodi:role="line">)</tspan></text>
+  </g>
+</svg>
