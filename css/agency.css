@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Agency v5.2.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
+ * Start Bootstrap - Simple2B.com v1.0.1 (https://Simple2B.com)
+ * Copyright 2013-2020 Simple2B
+ * Licensed under MIT (https://github.com/BlackrockDigital/simple2b-agency/blob/master/LICENSE)
  */
 
 body {
@@ -133,6 +133,10 @@ img::-moz-selection {
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #3d8b40;
+}
+
+#mainNav .navbar-brand img {
+  height: 96px;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
