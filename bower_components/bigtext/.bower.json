@@ -1,0 +1,27 @@
+{
+  "name": "bigtext",
+  "version": "1.0.1",
+  "main": [
+    "dist/bigtext.js"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9.1"
+  },
+  "devDependencies": {
+    "qunit": ">=1.12.0"
+  },
+  "homepage": "https://github.com/zachleat/BigText",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "95c7aab08efc1c15d915e61a1f64b71e42d411ae"
+  },
+  "_source": "https://github.com/zachleat/BigText.git",
+  "_target": "^1.0.1",
+  "_originalSource": "bigtext",
+  "_direct": true
+}

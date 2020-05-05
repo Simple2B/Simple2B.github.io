@@ -1,0 +1,61 @@
+{
+  "name": "bigtext",
+  "title": "BigText",
+  "version": "1.0.1",
+  "description": "Calculates the font-size and word-spacing needed to match a line of text to a specific width. (jQuery plugin)",
+  "keywords": [
+    "grunt",
+    "typography"
+  ],
+  "homepage": "https://github.com/zachleat/bigtext",
+  "bugs": "https://github.com/zachleat/bigtext/issues",
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "twitter": "zachleat",
+    "github": "zachleat",
+    "url": "http://zachleat.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zachleat/bigtext.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "bytesize": "~0.2.0",
+    "glob": "~7.1.2",
+    "grunt": "~1.0.1",
+    "grunt-banner": "~0.6.0",
+    "grunt-bytesize": "~0.2.0",
+    "grunt-contrib-clean": "~1.1.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-csslint": "~2.0.0",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-qunit": "~2.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-gh-pages": "~2.0.0",
+    "grunt-lintspaces": "~0.8.1",
+    "grunt-mkdir": "~1.0.0",
+    "grunt-replace": "~1.0.1",
+    "load-grunt-tasks": "~3.5.2",
+    "matchdep": "~1.0.0"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">= 4",
+    "npm": ">=1.2.10"
+  },
+  "license": "MIT",
+  "config": {
+    "grunt": "grunt",
+    "src": "src",
+    "dist": "dist",
+    "test": "test",
+    "demo": "demo",
+    "bower": "bower_components"
+  }
+}

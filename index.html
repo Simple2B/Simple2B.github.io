@@ -54,11 +54,14 @@
   <!-- Header -->
   <header class="masthead">
     <div class="container">
-      <div class="intro-text">
+      <div class="intro-text" id="bigtext">
         <div class="intro-heading">Welcome To Simple2B Studio!</div>
         <div class="intro-lead-in">We deliver high-tech solutions to make your business success simple</div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
+      <script>
+      $('#bigtext').bigtext();
+      </script>
     </div>
   </header>
 
@@ -235,6 +238,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+  <script> $('#bigtext').bigtext(); </script>
 
 </body>
 
