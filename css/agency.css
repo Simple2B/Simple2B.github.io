@@ -195,7 +195,7 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
+  font-size: calc(1vw + 7px);
   line-height: 22px;
   margin-bottom: 25px;
   font-family: 'Montserrat';
@@ -203,7 +203,7 @@ header.masthead .intro-text .intro-lead-in {
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 70px;
+  font-size: calc(2vw + 27px);
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
@@ -211,23 +211,70 @@ header.masthead .intro-text .intro-heading {
   src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
+    white-space: nowrap;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: calc(1vw + 5px);
+    line-height: 20px;
     margin-bottom: 25px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 75px;
+    font-size: calc(1vw + 28px);
     font-weight: 700;
-    line-height: 75px;
-    margin-bottom: 50px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
+  }
+}
+
+@media (max-width: 768px) and (min-width: 560px) {
+  header.masthead .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+    white-space: nowrap;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: calc(1vw + 5px);
+    line-height: 20px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat';
+    src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: calc(1vw + 28px);
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
+  }
+}
+
+@media (max-width: 560px) {
+  header.masthead .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+    white-space: nowrap;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: calc(1vw + 3px);
+    line-height: 20px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat';
+    src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: calc(1vw + 11px);
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 30px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
