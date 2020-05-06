@@ -213,12 +213,12 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 993px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: calc(1vw + 14px);
     line-height: 40px;
-    margin-bottom: 225px;
+    margin-bottom: 25px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
@@ -236,12 +236,12 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) and (max-width: 992px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: calc(1vw + 14px);
     line-height: 40px;
-    margin-bottom: 225px;
+    margin-bottom: 25px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
@@ -259,12 +259,12 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 555px) and (max-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: calc(1vw + 14px);
     line-height: 40px;
-    margin-bottom: 225px;
+    margin-bottom: 25px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
@@ -282,12 +282,12 @@ header.masthead .intro-text .intro-heading {
 @media (max-width: 555px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: calc(1vw + 14px);
     line-height: 40px;
-    margin-bottom: 225px;
+    margin-bottom: 25px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
