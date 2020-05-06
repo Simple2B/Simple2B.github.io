@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -12,7 +14,7 @@
    viewBox="0 0 84.666664 84.666672"
    version="1.1"
    id="svg4002"
-   inkscape:version="1.0rc1 (09960d6, 2020-04-09)"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="logo-white.svg">
   <defs
      id="defs3996" />
@@ -24,18 +26,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="276.54703"
-     inkscape:cy="202.11188"
+     inkscape:cx="206.90417"
+     inkscape:cy="192.11188"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
-     inkscape:window-width="1440"
-     inkscape:window-height="900"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:document-rotation="0">
+     inkscape:window-width="1103"
+     inkscape:window-height="833"
+     inkscape:window-x="652"
+     inkscape:window-y="69"
+     inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
        id="grid4879" />
@@ -57,6 +58,18 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-212.33332)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.73446465px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26147601;"
+       x="4.9731312"
+       y="278.48636"
+       id="text4006"
+       transform="scale(0.98825583,1.0118837)"><tspan
+         sodipodi:role="line"
+         id="tspan4004"
+         x="4.9731312"
+         y="278.48636"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.73446465px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';stroke-width:0.26147601;fill:#ffffff;">Simple2B</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4008"
@@ -68,43 +81,24 @@
            height="52.527931"
            x="126.26907"
            y="223.2233" /></flowRegion><flowPara
-         id="flowPara4014" /></flowRoot>
-    <g
+         id="flowPara4014"></flowPara></flowRoot>    <g
        id="g4877"
-       transform="matrix(1.1829451,0,0,1.1829451,-43.321433,-22.967947)">
+       transform="matrix(1.1829451,0,0,1.1829451,-32.738093,-22.967947)">
       <path
          inkscape:connector-curvature="0"
          id="path4018-4-6"
          d="m 63.211659,239.17108 c -3.108317,-0.5403 -5.808768,-2.05457 -8.124405,-4.55573 -5.04085,-5.44472 -4.822222,-13.77551 0.501221,-19.09895 7.395721,-7.39572 20.006099,-4.49015 23.406437,5.39309 3.386291,9.84243 -5.443657,20.05889 -15.783253,18.26159 z"
-         style="fill:#51b7c3;fill-opacity:1;stroke-width:0.26727" />
+         style="fill:#51b7c3;fill-opacity:1;stroke-width:0.26726952" />
       <path
          inkscape:connector-curvature="0"
          id="path4018-4"
          d="m 70.171411,239.17109 c -3.108317,-0.5403 -5.808768,-2.05457 -8.124404,-4.55573 -5.04085,-5.44472 -4.822222,-13.77551 0.501221,-19.09895 7.39572,-7.39572 20.006098,-4.49015 23.406436,5.39309 3.386289,9.84243 -5.443657,20.05889 -15.783253,18.26159 z"
-         style="fill:#70d6e3;fill-opacity:0.627451;stroke-width:0.26727" />
+         style="fill:#70d6e3;fill-opacity:0.62745098;stroke-width:0.26726952" />
     </g>
-    <text
-       id="text46"
-       y="262.23813"
-       x="64.133438"
-       style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:56.63080000000000069px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Ultra-Light';stroke-width:0.589904;fill:#ffffff;"
-       xml:space="preserve"
-       transform="scale(0.97926995,1.0211689)"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Ultra-Light';stroke-width:0.589904;fill:#ffffff;"
-         y="262.23813"
-         x="64.133438"
-         id="tspan44"
-         sodipodi:role="line">)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:14.11110000000000042px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';stroke-width:0.264583;fill:#ffffff;"
-       x="2.8348212"
-       y="273.3765"
-       id="text29"><tspan
-         sodipodi:role="line"
-         id="tspan27"
-         x="2.8348212"
-         y="273.3765"
-         style="stroke-width:0.264583;fill:#ffffff;">Simple2B</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.92770934;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       d="M 78.316667,220.27084 V 289.0625"
+       id="path4883"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

@@ -196,7 +196,7 @@ header.masthead .intro-text {
 header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
   line-height: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   font-family: 'Montserrat';
   src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
 }
@@ -205,7 +205,6 @@ header.masthead .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
-  margin-bottom: 25px;
   font-family: 'Montserrat';
   src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
 }
@@ -213,12 +212,12 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 993px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: calc(1vw + 14px);
     line-height: 40px;
-    margin-bottom: 225px;
+    margin-bottom: 70px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
@@ -236,12 +235,12 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) and (max-width: 992px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: calc(1vw + 14px);
     line-height: 40px;
-    margin-bottom: 225px;
+    margin-bottom: 50px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
@@ -250,7 +249,6 @@ header.masthead .intro-text .intro-heading {
     white-space: nowrap;
     font-weight: 700;
     line-height: 150px;
-    margin-bottom: 50px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
@@ -259,12 +257,12 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 555px) and (max-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: calc(1vw + 14px);
     line-height: 40px;
-    margin-bottom: 225px;
+    margin-bottom: 50px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
@@ -273,7 +271,6 @@ header.masthead .intro-text .intro-heading {
     white-space: nowrap;
     font-weight: 700;
     line-height: 150px;
-    margin-bottom: 50px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
@@ -282,12 +279,12 @@ header.masthead .intro-text .intro-heading {
 @media (max-width: 555px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: calc(1vw + 14px);
     line-height: 40px;
-    margin-bottom: 225px;
+    margin-bottom: 50px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
@@ -296,7 +293,6 @@ header.masthead .intro-text .intro-heading {
     white-space: nowrap;
     font-weight: 700;
     line-height: 150px;
-    margin-bottom: 50px;
     font-family: 'Montserrat';
     src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
   }
