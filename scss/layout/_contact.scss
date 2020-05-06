@@ -35,11 +35,6 @@ section#contact {
     cursor: pointer; /* "hand" cursor */
   }
 
-  .inputFile:focus+label,
-  .inputFile+label:hover {
-    background-color: red;
-  }
-
   .inputFile:focus+label {
     outline: 1px dotted #000;
     outline: -webkit-focus-ring-color auto 5px;
