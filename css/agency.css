@@ -112,6 +112,12 @@ img::-moz-selection {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
+.userInfoSender {
+  height: 50px;
+  margin-left: 11px;
+  max-width: 300px;
+}
+
 #mainNav {
   background-color: #212529;
 }
@@ -355,21 +361,41 @@ section#contact .section-heading {
   color: #fff;
 }
 
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
-}
-
 section#contact .form-group input.form-control {
-  height: auto;
+  height: 48px;
 }
 
 section#contact .form-group textarea.form-control {
-  height: 157px;
+  height: 180px;
+}
+
+section#contact .inputFile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+section#contact .inputFile + label {
+  font-size: 2em;
+  font-weight: 700;
+  color: white;
+  margin-left: 20%;
+  display: inline-block;
+  cursor: pointer;
+  /* "hand" cursor */
+}
+
+section#contact .inputFile:focus + label,
+section#contact .inputFile + label:hover {
+  background-color: red;
+}
+
+section#contact .inputFile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 section#contact .form-control:focus {

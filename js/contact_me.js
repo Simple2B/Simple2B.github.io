@@ -1,4 +1,6 @@
 $(function() {
+  const TARGET_HOST = 'http://127.0.0.1:5000';
+  // const TARGET_HOST = 'https://simple2b.pythonanywhere.com';
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
@@ -19,44 +21,52 @@ $(function() {
       }
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
-      $.ajax({
-        url: "https://simple2b.pythonanywhere.com/send_message",
-        type: "POST",
-        data: {
-          name: name,
-          phone: phone,
-          email: email,
-          message: message
-        },
-        cache: false,
-        success: function() {
-          // Success message
-          $('#success').html("<div class='alert alert-success'>");
-          $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            .append("</button>");
-          $('#success > .alert-success')
-            .append("<strong>Your message has been sent. </strong>");
-          $('#success > .alert-success')
-            .append('</div>');
-          //clear all fields
-          $('#contactForm').trigger("reset");
-        },
-        error: function() {
-          // Fail message
-          $('#success').html("<div class='alert alert-danger'>");
-          $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            .append("</button>");
-          $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
-          $('#success > .alert-danger').append('</div>');
-          //clear all fields
-          $('#contactForm').trigger("reset");
-        },
-        complete: function() {
-          setTimeout(function() {
-            $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
-          }, 1000);
-        }
+
+      const files = document.querySelector('#chosenFile').files;
+
+      // Send FormData
+      const formData = new FormData();
+      formData.set('name', name);
+      formData.set('phone', phone);
+      formData.set('email', email);
+      formData.set('message', message);
+      if (files && files.length > 0){
+        formData.append('file', files[0])
+      }
+
+      fetch(`${TARGET_HOST}/send_message`, {
+        method: 'POST',
+        body: formData
+      })
+      .then(() => {
+        // Success message
+        $('#success').html("<div class='alert alert-success'>");
+        $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+          .append("</button>");
+        $('#success > .alert-success')
+          .append("<strong>Your message has been sent. </strong>");
+        $('#success > .alert-success')
+          .append('</div>');
+        //clear all fields
+        $('#contactForm').trigger("reset");
+      })
+      .catch(error => {
+        console.error(error);
+        // Fail message
+        $('#success').html("<div class='alert alert-danger'>");
+        $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+          .append("</button>");
+        $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+        $('#success > .alert-danger').append('</div>');
+        //clear all fields
+        $('#contactForm').trigger("reset");
+      })
+      .finally(() => {
+        setTimeout(function() {
+          $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
+        }, 1000);
       });
+
     },
     filter: function() {
       return $(this).is(":visible");
@@ -67,6 +77,7 @@ $(function() {
     e.preventDefault();
     $(this).tab("show");
   });
+
 });
 
 /*When clicking on Full hide fail/success boxes */
