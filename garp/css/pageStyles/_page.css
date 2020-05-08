@@ -1,0 +1,33 @@
+body {
+  overflow-x: hidden;
+  background: #f1f1f1; 
+  margin-top: 70px;
+}
+
+div.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 50px;
+    background: #fefefe;
+}
+
+#container-padd {
+    margin-bottom: 50px;
+    background: #f1f1f1;
+}
+
+div.row {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 40px;
+}
+
+nav {
+    background: #a5a5a5; 
+}
+
+#product img {
+    display: block;
+    height: auto;
+    max-width: 50%;
+    }
