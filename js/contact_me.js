@@ -10,12 +10,10 @@ $(function() {
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
-      var name = $("input#name").val();
-      var email = $("input#email").val();
-      var phone = $("input#phone").val();
-      var chosenFile=$("input#chosenFile").val();
-      var message = $("textarea#message").val();
-      var firstName = name; // For Success/Failure Message
+      let name = $("input#name").val();
+      let email = $("input#email").val();
+      let message = $("textarea#message").val();
+      let firstName = name; // For Success/Failure Message
       // Check for white space in name for Success/Fail message
       if (firstName.indexOf(' ') >= 0) {
         firstName = name.split(' ').slice(0, -1).join(' ');
@@ -28,7 +26,6 @@ $(function() {
       // Send FormData
       const formData = new FormData();
       formData.set('name', name);
-      formData.set('phone', phone);
       formData.set('email', email);
       formData.set('message', message);
       if (files && files.length > 0){
