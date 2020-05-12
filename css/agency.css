@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
   font-family: 'Montserrat';
   src: url("scss/fonts/Fonts/sofiapro-light.otf") format("opentype");
+  min-width: 320px;
 }
 
 p {
@@ -114,7 +115,6 @@ img::-moz-selection {
 
 .userInfoSender {
   height: 50px;
-  margin-left: 11px;
   max-width: 300px;
 }
 
@@ -386,11 +386,6 @@ section#contact .inputFile + label {
   display: inline-block;
   cursor: pointer;
   /* "hand" cursor */
-}
-
-section#contact .inputFile:focus + label,
-section#contact .inputFile + label:hover {
-  background-color: red;
 }
 
 section#contact .inputFile:focus + label {
