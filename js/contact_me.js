@@ -22,6 +22,7 @@ $(function() {
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
       const files = document.querySelector('#chosenFile').files;
+      console.log(files[0])
 
       // Send FormData
       const formData = new FormData();
@@ -51,6 +52,7 @@ $(function() {
       .catch(error => {
         console.error(error);
         // Fail message
+
         $('#success').html("<div class='alert alert-danger'>");
         $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
           .append("</button>");
@@ -82,3 +84,27 @@ $(function() {
 $('#name').focus(function() {
   $('#success').html('');
 });
+
+const f1 = (context) => {
+
+  // console.log(context)
+  let FileSize = context.files[0].size / 1024 / 1024; // in MB
+
+  if (FileSize > 1) {
+      $('#success').html("<div class='alert alert-danger'>");
+      $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+        .append("</button>");
+      $('#success > .alert-danger').append($("<strong>").text(`Sorry, ... it seems that my mail server is not responding. Please try again later!`));
+      $('#success > .alert-danger').append('</div>');
+      //clear all fields
+      // $('#contactForm').trigger("reset");       // $(file).val(''); //for clearing with Jquery
+  } 
+}
+const span = document.createElement('span');
+
+document.querySelector('#chosenFile').addEventListener('change', e => {
+  console.log(e.target.files[0].name)
+  span.innerHTML = e.target.files[0].name;
+  span.classList.add('span__text')
+  document.querySelector('#myLabel').appendChild(span)
+})

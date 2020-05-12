@@ -30,9 +30,16 @@ section#contact {
     font-size: 2em;
     font-weight: 700;
     color: white;
-    margin-left: 20%;
+    // margin-left: 20%;
     display: inline-block;
     cursor: pointer; /* "hand" cursor */
+  }
+
+  .span__text {
+    font-size: .4em;
+    color: #FFF
+    display: inline-block;
+    max-width: 70px;
   }
 
   .inputFile:focus+label {

@@ -164,11 +164,10 @@
                   <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
                   <!-- <p class="help-block text-danger"></p> -->
                 </div>
-                <div class="row d-flex bd-highlight align-items-between">
-                  <div class="col" >
-                    <input class="inputFile form-control-file" id="chosenFile" type="file" name="chosenFile" >
-                    <label class="mylabel" for="chosenFile"><i class="fas fa-paperclip"></i></label>
-                    <p class="help-block text-danger"></p>
+                <div class="row d-flex bd-highlight align-content-between">
+                  <div id='myLabel' class="col" >
+                    <input class="inputFile form-control-file" id="chosenFile" type="file" name="chosenFile" onchange="f1(this)" >
+                    <label  class="mylabel" for="chosenFile"><i class="fas fa-paperclip"></i></label>
                   </div>
                   <div class="col">
                     <button id="sendMessageButton" class="userInfoSender btn btn-primary btn-sm btn-lg text-uppercase justify-content-center" type="submit">Send Message</button>
@@ -182,7 +181,7 @@
                 </div>
               </div>
               
-              <div class="row w-100 p-3 align-content-center d-flex bd-highlight">
+              <div class="row mx-auto w-100 p-3 align-content-center d-flex bd-highlight">
                 <div id="success"></div>
                 <p class="help-block text-danger"></p>
               </div>
