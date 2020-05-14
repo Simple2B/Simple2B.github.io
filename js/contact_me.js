@@ -1,4 +1,6 @@
+
 $(function() {
+
   const TARGET_HOST = 'http://127.0.0.1:5000';
   // const TARGET_HOST = 'https://simple2b.pythonanywhere.com';
 
@@ -85,6 +87,7 @@ $('#name').focus(function() {
   $('#success').html('');
 });
 
+
 const f1 = (context) => {
 
   // console.log(context)
@@ -100,11 +103,11 @@ const f1 = (context) => {
       // $('#contactForm').trigger("reset");       // $(file).val(''); //for clearing with Jquery
   } 
 }
-const span = document.createElement('span');
+const myTittle = document.querySelector('#attach_icon')
 
 document.querySelector('#chosenFile').addEventListener('change', e => {
+  myTittle.setAttribute("title",e.target.files[0].name)
+  console.log(myTittle)
+
   console.log(e.target.files[0].name)
-  span.innerHTML = e.target.files[0].name;
-  span.classList.add('span__text')
-  document.querySelector('#myLabel').appendChild(span)
 })

@@ -35,12 +35,6 @@ section#contact {
     cursor: pointer; /* "hand" cursor */
   }
 
-  .span__text {
-    font-size: .4em;
-    color: #FFF
-    display: inline-block;
-    max-width: 70px;
-  }
 
   .inputFile:focus+label {
     outline: 1px dotted #000;
