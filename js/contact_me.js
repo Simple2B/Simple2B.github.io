@@ -93,6 +93,7 @@ document.querySelector('#chosenFile').addEventListener('change', e => {
   let choosen_file = e.target.files[0];
   let FileSize = choosen_file.size / 1024 / 1024;
   if (FileSize < 1) {
+    $('#my_alert').hide()
     let filename = choosen_file.name;
     myTittle.setAttribute("title", filename);
   } else {
