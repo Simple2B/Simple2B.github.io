@@ -1,15 +1,14 @@
-
-$(function() {
+$(function () {
 
   const TARGET_HOST = 'http://127.0.0.1:5000';
   // const TARGET_HOST = 'https://simple2b.pythonanywhere.com';
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
-    submitError: function($form, event, errors) {
+    submitError: function ($form, event, errors) {
       // additional error messages or events
     },
-    submitSuccess: function($form, event) {
+    submitSuccess: function ($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
       let name = $("input#name").val();
@@ -31,51 +30,51 @@ $(function() {
       formData.set('name', name);
       formData.set('email', email);
       formData.set('message', message);
-      if (files && files.length > 0){
+      if (files && files.length > 0) {
         formData.append('file', files[0])
       }
 
       fetch(`${TARGET_HOST}/send_message`, {
-        method: 'POST',
-        body: formData
-      })
-      .then(() => {
-        // Success message
-        $('#success').html("<div class='alert alert-success'>");
-        $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-          .append("</button>");
-        $('#success > .alert-success')
-          .append("<strong>Your message has been sent. </strong>");
-        $('#success > .alert-success')
-          .append('</div>');
-        //clear all fields
-        $('#contactForm').trigger("reset");
-      })
-      .catch(error => {
-        console.error(error);
-        // Fail message
+          method: 'POST',
+          body: formData
+        })
+        .then(() => {
+          // Success message
+          $('#success').html("<div class='alert alert-success'>");
+          $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+            .append("</button>");
+          $('#success > .alert-success')
+            .append("<strong>Your message has been sent. </strong>");
+          $('#success > .alert-success')
+            .append('</div>');
+          //clear all fields
+          $('#contactForm').trigger("reset");
+        })
+        .catch(error => {
+          console.error(error);
+          // Fail message
 
-        $('#success').html("<div class='alert alert-danger'>");
-        $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-          .append("</button>");
-        $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
-        $('#success > .alert-danger').append('</div>');
-        //clear all fields
-        $('#contactForm').trigger("reset");
-      })
-      .finally(() => {
-        setTimeout(function() {
-          $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
-        }, 1000);
-      });
+          $('#success').html("<div class='alert alert-danger'>");
+          $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+            .append("</button>");
+          $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+          $('#success > .alert-danger').append('</div>');
+          //clear all fields
+          $('#contactForm').trigger("reset");
+        })
+        .finally(() => {
+          setTimeout(function () {
+            $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
+          }, 1000);
+        });
 
     },
-    filter: function() {
+    filter: function () {
       return $(this).is(":visible");
     },
   });
 
-  $("a[data-toggle=\"tab\"]").click(function(e) {
+  $("a[data-toggle=\"tab\"]").click(function (e) {
     e.preventDefault();
     $(this).tab("show");
   });
@@ -83,31 +82,21 @@ $(function() {
 });
 
 /*When clicking on Full hide fail/success boxes */
-$('#name').focus(function() {
+$('#name').focus(function () {
   $('#success').html('');
 });
 
-
-const f1 = (context) => {
-
-  // console.log(context)
-  let FileSize = context.files[0].size / 1024 / 1024; // in MB
-
-  if (FileSize > 1) {
-      $('#success').html("<div class='alert alert-danger'>");
-      $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-        .append("</button>");
-      $('#success > .alert-danger').append($("<strong>").text(`Sorry, ... it seems that my mail server is not responding. Please try again later!`));
-      $('#success > .alert-danger').append('</div>');
-      //clear all fields
-      // $('#contactForm').trigger("reset");       // $(file).val(''); //for clearing with Jquery
-  } 
-}
-const myTittle = document.querySelector('#attach_icon')
+$('#my_alert').hide()
 
 document.querySelector('#chosenFile').addEventListener('change', e => {
-  myTittle.setAttribute("title",e.target.files[0].name)
-  console.log(myTittle)
-
-  console.log(e.target.files[0].name)
+  const myTittle = document.querySelector('#attach_icon')
+  let choosen_file = e.target.files[0];
+  let FileSize = choosen_file.size / 1024 / 1024;
+  if (FileSize < 1) {
+    let filename = choosen_file.name;
+    myTittle.setAttribute("title", filename);
+  } else {
+    choosen_file = '';
+    $('#my_alert').show();
+  }
 })
