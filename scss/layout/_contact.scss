@@ -8,18 +8,39 @@ section#contact {
     color: $white;
   }
   .form-group {
-    margin-bottom: 25px;
-    input,
-    textarea {
-      padding: 20px;
-    }
     input.form-control {
-      height: auto;
+      height: 48px;
     }
+
     textarea.form-control {
-      height: 157px;
+      height: 180px;
     }
   }
+
+  .inputFile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .inputFile+label {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    // margin-left: 20%;
+    display: inline-block;
+    cursor: pointer; /* "hand" cursor */
+  }
+
+
+  .inputFile:focus+label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
   .form-control:focus {
     border-color: $primary;
     box-shadow: none;
