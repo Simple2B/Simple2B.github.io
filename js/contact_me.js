@@ -1,7 +1,6 @@
 $(function () {
 
-  const TARGET_HOST = 'http://127.0.0.1:5000';
-  // const TARGET_HOST = 'https://simple2b.pythonanywhere.com';
+  const TARGET_HOST = 'https://simple2b.pythonanywhere.com';
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
@@ -67,7 +66,6 @@ $(function () {
             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
           }, 1000);
         });
-
     },
     filter: function () {
       return $(this).is(":visible");
