@@ -151,9 +151,9 @@
           <h2 class="section-heading text-uppercase">Contact Us</h2>
           <h3 class="section-subheading text-muted"></h3>
         </div>
-      </div><div class="container">
-        
       </div>
+    </div>
+      <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <form id="contactForm" name="sentMessage" novalidate="novalidate">
@@ -169,7 +169,7 @@
                 </div>
                 <div class="row d-flex bd-highlight align-content-between">
                   <div id='myLabel' class="col" >
-                    <input class="inputFile form-control-file " id="chosenFile" type="file" name="chosenFile" onchange="f1(this)" >
+                    <input class="inputFile form-control-file" id="chosenFile" type="file" name="chosenFile">
                     <label class="mylabel" for="chosenFile"><i id="attach_icon" class="fas fa-paperclip" ></i></label>
                   </div>
                   <div class="col">
@@ -183,19 +183,19 @@
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
-              
-              <div class="row mx-auto w-100 p-3 align-content-center d-flex bd-highlight">
-                <div id="success"></div>
-                <p class="help-block text-danger"></p>
-              </div>
-              <div class="clearfix"></div>
-
-              <!-- <div class="row mx-auto w-100 p-3 align-content-center d-flex bd-highlight">
-                
-              </div> -->
             </div>
           </form>
         </div>
+      </div>
+      <div class="container-fluid" style="max-width: 500px;">
+        <div id="success"></div>
+      </div>
+      <div class="container-fluid" style="max-width: 500px;" id="my_alert">
+        <div class="alert alert-info" style="width: 100%;" role="alert">
+          <p class="text-center">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>You need to select a smaller file...
+          </p>
+      </div>
       </div>
     </div>
   </section>

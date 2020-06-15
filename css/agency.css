@@ -382,7 +382,6 @@ section#contact .inputFile + label {
   font-size: 2em;
   font-weight: 700;
   color: white;
-  margin-left: 20%;
   display: inline-block;
   cursor: pointer;
   /* "hand" cursor */
