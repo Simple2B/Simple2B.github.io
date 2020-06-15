@@ -22,8 +22,6 @@ $(function () {
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
       const files = document.querySelector('#chosenFile').files;
-      console.log(files[0])
-
       // Send FormData
       const formData = new FormData();
       formData.set('name', name);
@@ -84,10 +82,11 @@ $('#name').focus(function () {
   $('#success').html('');
 });
 
+
 $('#my_alert').hide()
 
 document.querySelector('#chosenFile').addEventListener('change', e => {
-  const myTittle = document.querySelector('#attach_icon')
+  let myTittle = document.querySelector('#attach_icon')
   let choosen_file = e.target.files[0];
   let FileSize = choosen_file.size / 1024 / 1024;
   if (FileSize < 1) {
@@ -96,6 +95,7 @@ document.querySelector('#chosenFile').addEventListener('change', e => {
     myTittle.setAttribute("title", filename);
   } else {
     choosen_file = '';
+    myTittle.setAttribute("title", '');
     $('#my_alert').show();
   }
 })

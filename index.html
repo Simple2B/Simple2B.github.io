@@ -168,7 +168,7 @@
                 </div>
                 <div class="row d-flex bd-highlight align-content-between">
                   <div id='myLabel' class="col" >
-                    <input class="inputFile form-control-file " id="chosenFile" type="file" name="chosenFile"  >
+                    <input class="inputFile form-control-file" id="chosenFile" type="file" name="chosenFile">
                     <label class="mylabel" for="chosenFile"><i id="attach_icon" class="fas fa-paperclip" ></i></label>
                   </div>
                   <div class="col">
@@ -186,7 +186,10 @@
           </form>
         </div>
       </div>
-      <div class="container-fluid" style="width: 60%;" id="my_alert">
+      <div class="container-fluid" style="max-width: 500px;">
+        <div id="success"></div>
+      </div>
+      <div class="container-fluid" style="max-width: 500px;" id="my_alert">
         <div class="alert alert-info" style="width: 100%;" role="alert">
           <p class="text-center">
           <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>You need to select a smaller file...
