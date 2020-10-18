@@ -1,6 +1,6 @@
 $(function () {
 
-  const TARGET_HOST = 'https://simple2b.pythonanywhere.com';
+  const TARGET_HOST = 'http://46.101.221.249:5555';
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
