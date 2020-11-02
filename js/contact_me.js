@@ -1,6 +1,6 @@
 $(function () {
 
-  const TARGET_HOST = 'http://46.101.221.249:5555';
+  const TARGET_HOST = 'https://ctm9v55l6h.execute-api.us-east-2.amazonaws.com/dev';
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
