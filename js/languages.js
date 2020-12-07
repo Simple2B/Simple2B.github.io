@@ -41,11 +41,6 @@ function change() {
         document.getElementById("profilelink").innerHTML="Profile"
         document.getElementById("contactlink").innerHTML="Contact"
         document.getElementById("menu").innerHTML="Menu"
-        document.getElementById("").innerHTML=""
-        document.getElementById("").innerHTML=""
-        document.getElementById("").innerHTML=""
-        document.getElementById("").innerHTML=""
-        document.getElementById("").innerHTML=""
     } else if (i==2) {
         document.getElementById("welcome").innerHTML="Welkom bij Simple2B Studio!"
         document.getElementById("description").innerHTML="Wij leveren hoogtechnologische oplossingen om uw zakelijk succes eenvoudig te maken"
@@ -87,8 +82,5 @@ function change() {
         document.getElementById("profilelink").innerHTML="Profiel"
         document.getElementById("contactlink").innerHTML="Contact"
         document.getElementById("menu").innerHTML="Menu"
-        document.getElementById("").innerHTML=""
-        document.getElementById("").innerHTML=""
-        document.getElementById("").innerHTML=""
     }
   }
