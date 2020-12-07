@@ -32,23 +32,37 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo-white.svg" alt="Simple2B"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="menu" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a id="serviceslink" class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Profile</a>
+            <a id="profilelink" class="nav-link js-scroll-trigger" href="#about">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary btn-sl text-uppercase js-scroll-trigger" style="margin-top:7px;" href="#contact">Contact</a>
+            <a id="technologieslink" class="nav-link js-scroll-trigger" href="#timeline">Technologies</a>
           </li>
+          <li class="nav-item">
+            <a id="contactlink" class="btn btn-primary btn-sl text-uppercase js-scroll-trigger" style="margin-top:7px;" href="#contact">Contact</a>
+          </li>
+        <div class="nav-item" id="lang">
+        <form id="langform" align="center" onsubmit="return false">
+          <select class="btn btn-light btn-sl text-uppercase js-scroll-trigger" style="margin-top:7px; padding: 7px;" form="langform" id="lan" onchange="change()">
+            <option value="1" selected>English</option>
+            <option value="2">Dutch</option>
+          </select>
+        </form>
+      </div>
         </ul>
       </div>
+
+
+
     </div>
   </nav>
 
@@ -56,9 +70,9 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-heading">Welcome To Simple2B Studio!</div>
-        <div class="intro-lead-in">We deliver high-tech solutions to make your business success simple</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <div id="welcome" class="intro-heading">Welcome To Simple2B Studio!</div>
+        <div id="description" class="intro-lead-in">We deliver high-tech solutions to make your business success simple</div>
+        <a id="more" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>
   </header>
@@ -68,8 +82,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
-          <h3 class="section-subheading">We are the Team of enthusiasts of Web Application Development. Not only we love to deliver high-quality solutions for B2B, B2C, and Startups, we aim to ensure mutual success with our customers.</h3>
+          <h2 id='service' class="section-heading text-uppercase">Services</h2>
+          <h3 id="service-description" class="section-subheading">We are the Team of enthusiasts of Web Application Development. Not only we love to deliver high-quality solutions for B2B, B2C, and Startups, we aim to ensure mutual success with our customers.</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -78,11 +92,11 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-project-diagram fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Solution architecture</h4>
+          <h4 id='solution' class="service-heading">Solution architecture</h4>
           <p>
             <ul>
-              <li>Project estimation to evaluate the duration of the project from initiation to the commercial launch</li>
-              <li>We will create an architecture of your new web application or transform the architecture of your existing one to meet the latest needs & requirements of your business</li>
+              <li id='solution-desc-1'>Project estimation to evaluate the duration of the project from initiation to the commercial launch</li>
+              <li id='solution-desc-2'>We will create an architecture of your new web application or transform the architecture of your existing one to meet the latest needs & requirements of your business</li>
             </ul>
           </p>
         </div>
@@ -91,12 +105,12 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-code fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Development</h4>
+          <h4 id='development' class="service-heading">Development</h4>
           <p class="text-muted">
             <ul>
-              <li>Coding phase</li>
-              <li>Testing phase</li>
-              <li>Regular basis reporting for you to track the project progress</li>
+              <li id="development-desc-1">Coding phase</li>
+              <li id="development-desc-2">Testing phase</li>
+              <li id="development-desc-3">Regular basis reporting for you to track the project progress</li>
             </ul>
           </p>
         </div>
@@ -105,10 +119,10 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-headset fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Support service</h4>
+          <h4 id="support" class="service-heading">Support service</h4>
           <p class="text-muted">
             <ul>
-              <li>We want our partnership to last. To ensure the continuity of your business we will be there to help you with new ideas implementation & other post-development services</li>
+              <li id="support-desc">We want our partnership to last. To ensure the continuity of your business we will be there to help you with new ideas implementation & other post-development services</li>
             </ul>
           </p>
         </div>
@@ -121,25 +135,70 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Profile</h2>
+          <h2 id="profile" class="section-heading text-uppercase">Profile</h2>
           <h3 class="section-subheading"></h3>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
           <ul class="portfolio">
-            <li> Architecture design, UX and development of modern web & mobile applications</li>
-            <li>Full-stack end-to-end development with cutting-edge technologies</li>
-            <li>Frontend expertise in React & Redux</li>
-            <li>Backend expertise in Python apps on Django, Flask, AsyncIO, SQLAlchemy</li>
-            <li>Deployment and CI expertise in Docker, Nginx</li>
-            <li>Mobile & Desktop: React Native, Electron</li>
-            <li>Following TDD and E2E testing</li>
-            <li>Agile methodology</li>
+            <li id="profile-desc-1">Architecture design, UX and development of modern web & mobile applications</li>
+            <li id="profile-desc-2">Full-stack end-to-end development with cutting-edge technologies</li>
+            <li id="profile-desc-3">Frontend expertise in React & Redux</li>
+            <li id="profile-desc-4">Backend expertise in Python apps on Django, Flask, AsyncIO, SQLAlchemy</li>
+            <li id="profile-desc-5">Deployment and CI expertise in Docker, Nginx</li>
+            <li id="profile-desc-6">Mobile & Desktop: React Native, Electron</li>
+            <li id="profile-desc-7">Following TDD and E2E testing</li>
+            <li id="profile-desc-8">Agile methodology</li>
           </ul>
         </div>
       </div>
     </div>
+  </section>
+
+   <!-- Featured Technologies -->
+  <section class="page-section" id="technologies">
+      <div class="container">
+         <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 id="technologies" class="section-heading text-uppercase">Featured Technologies</h2>
+              <h3 id="technologies-desc" class="section-subheading text-muted">Effective solutions built in a simple way</h3>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="timeline">
+                  <li>
+                      <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/technologies/flasklogo.jpg" alt="" /></div>
+                      <div class="timeline-panel">
+                          <div class="timeline-heading">
+                              <h4 id="flask">Flask</h4>
+                          </div>
+                          <div id="flask-desc"class="timeline-body"><p>Flask is a web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications & to keep the core of the application simple.</p></div>
+                      </div>
+                  </li>
+                  <li class="timeline-inverted">
+                      <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/technologies/react_js.jpg" alt="" /></div>
+                      <div class="timeline-panel">
+                          <div class="timeline-heading">
+                              <h4 id="react">React JS </h4>
+                          </div>
+                          <div id="react-desc"class="timeline-body"><p>React JS is a library for building composable user interfaces or UI components. It encourages the creation of reusable UI components, which present data that changes over time.</p></div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/technologies/django.jpg" alt="" /></div>
+                      <div class="timeline-panel">
+                          <div class="timeline-heading">
+                              <h4 id="django">Django</h4>
+                          </div>
+                          <div id="django-desc"class="timeline-body"><p>Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so we can focus on writing your app without needing to reinvent the wheel.</p></div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          </div>
+      </div>
   </section>
 
   <!-- Contact -->
@@ -147,7 +206,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h2 id="contact" class="section-heading text-uppercase">Contact Us</h2>
           <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
@@ -192,7 +251,7 @@
       <div class="container-fluid" style="max-width: 500px;" id="my_alert">
         <div class="alert alert-info" style="width: 100%;" role="alert">
           <p class="text-center">
-          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>You need to select a smaller file...
+          <i id="file" class="fa fa-exclamation-triangle" aria-hidden="true"></i>You need to select a smaller file...
           </p>
       </div>
       </div>
@@ -226,10 +285,10 @@
         <div class="col-md-4">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
-              <a href="/policy.html">Privacy Policy</a>
+              <a id="policy" href="/policy.html">Privacy Policy</a>
             </li>
             <li class="list-inline-item">
-              <a href="/terms.html">Terms of Use</a>
+              <a id="using" href="/terms.html">Terms of Use</a>
             </li>
           </ul>
         </div>
@@ -248,6 +307,10 @@
   <!-- Contact form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
+
+  <!-- Language switch scripts for this template -->
+  <script src="js/languages.js"></script>
+
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
