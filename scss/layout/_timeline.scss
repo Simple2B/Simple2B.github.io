@@ -1,8 +1,11 @@
 // Styling for the timeline section
 .timeline {
+  background-color: $gray-900;
   position: relative;
   padding: 0;
   list-style: none;
+  color: $white;
+
   &:before {
     position: absolute;
     top: 0;
@@ -55,7 +58,7 @@
       color: white;
       border: 7px solid $gray-200;
       border-radius: 100%;
-      background-color: $primary;
+      background-color: white;
       h4 {
         font-size: 10px;
         line-height: 14px;
@@ -84,9 +87,9 @@
     }
   }
   .timeline-heading {
-    h4 {
+    h2 {
       margin-top: 0;
-      color: inherit;
+      color: white;
       &.subheading {
         text-transform: none;
       }
