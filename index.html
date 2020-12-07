@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +23,6 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="hint.css">
 
 </head>
 
@@ -45,14 +45,14 @@
             <a id="profilelink" class="nav-link js-scroll-trigger" href="#about">Profile</a>
           </li>
           <li class="nav-item">
-            <a id="technologieslink" class="nav-link js-scroll-trigger" href="#timeline">Technologies</a>
+            <a id="technologieslink" class="nav-link js-scroll-trigger" href="#technologies">Technologies</a>
           </li>
           <li class="nav-item">
             <a id="contactlink" class="btn btn-primary btn-sl text-uppercase js-scroll-trigger" style="margin-top:7px;" href="#contact">Contact</a>
           </li>
         <div class="nav-item" id="lang">
         <form id="langform" align="center" onsubmit="return false">
-          <select class="btn btn-light btn-sl text-uppercase js-scroll-trigger" style="margin-top:7px; padding: 7px;" form="langform" id="lan" onchange="change()">
+          <select class="btn btn-light btn-sl text-uppercase js-scroll-trigger " style="margin-top:7px; margin-left: 15px; padding: 8px;" form="langform" id="lan" onchange="change()">
             <option value="1" selected>English</option>
             <option value="2">Dutch</option>
           </select>
@@ -161,7 +161,7 @@
       <div class="container">
          <div class="row">
           <div class="col-lg-12 text-center">
-              <h2 id="technologies" class="section-heading text-uppercase">Featured Technologies</h2>
+              <h2 id="technologies-title" class="section-heading text-uppercase">Featured Technologies</h2>
               <h3 id="technologies-desc" class="section-subheading text-muted">Effective solutions built in a simple way</h3>
           </div>
           </div>
@@ -206,7 +206,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 id="contact" class="section-heading text-uppercase">Contact Us</h2>
+          <h2 id="contact-title" class="section-heading text-uppercase">Contact Us</h2>
           <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
@@ -282,16 +282,16 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a id="policy" href="/policy.html">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a id="using" href="/terms.html">Terms of Use</a>
-            </li>
-          </ul>
-        </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a id="policy" href="/policy-eng.html">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a id="using" href="/terms-eng.html">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
       </div>
     </div>
   </footer>
@@ -309,7 +309,7 @@
   <script src="js/contact_me.js"></script>
 
   <!-- Language switch scripts for this template -->
-  <script src="js/languages.js"></script>
+  <script src="js/languages.js" defer></script>
 
 
   <!-- Custom scripts for this template -->
