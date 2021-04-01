@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Simple2B.com v1.0.1 (https://Simple2B.com)
- * Copyright 2013-2020 Simple2B
+ * Copyright 2013-2021 Simple2B
  * Licensed under MIT (https://github.com/BlackrockDigital/simple2b-agency/blob/master/LICENSE)
  */
 
