@@ -2,16 +2,17 @@
 
 // Restated Bootstrap Variables
 
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
+$c-white: #fff;
+// $c-light-green: #AEAE98;
+// $c-green: #6B705C;
+$c-dark-green: #20211C;
 
-$primary: #0569a4 !default;
+$c-light-green: #477915;
+$c-green: #DDD12D;
+
+$c-light-green-opac:rgba(71, 121, 21, 0.05);
+$c-border: 1px solid rgba(221, 209, 45, 0.15);
+$c-green-opac:rgba(71, 121, 21, 0.5);
+
+$f-gentium: 'Gentium Basic', serif;
+$f-open-sans: 'Open Sans', sans-serif;
