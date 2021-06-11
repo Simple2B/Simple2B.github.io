@@ -99,7 +99,7 @@
 }
 
 .header__button:hover {
-  background: #20211C;
+  background: #a0960a;
 }
 
 .header__right {
@@ -483,7 +483,7 @@
 }
 
 .portfolio__content-button:hover {
-  background: #20211C;
+  background: #a0960a;
 }
 
 .portfolio__header {
@@ -694,7 +694,7 @@
 }
 
 .join__content-button:hover {
-  background: #20211C;
+  background: #a0960a;
 }
 
 .contact {
@@ -806,7 +806,7 @@
 }
 
 .contact__button:hover {
-  background: #20211C;
+  background: #a0960a;
 }
 
 .form__buttons {

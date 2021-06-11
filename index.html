@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/chief-slider.css">
     <!-- ChiefSlider JavaScript -->
     <script defer src="js/chief-slider.js"></script>
+    <script defer src="js/contact_me.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   </head>
@@ -19,7 +20,7 @@
           <nav class="header__nav">
 
             <div class="header_logo">
-              <a href="#"><img class="header_logo-img" src="./images/logo.svg" alt="logo"></a>
+              <a href="#"><img class="header_logo-img" src="./images/logo2.svg" alt="logo"></a>
             </div>
 
             <ul class="header__nav_list">
@@ -47,7 +48,7 @@
           <h1 class=" block header__title-left ">Welcome to</h1>
           <h1 class=" block header__title-left block">Simple2B</h1>
           <p class="block header__description">We deliver high-tech solutions to make your<br>business success simple</p>
-          <button class="block header__button" type="button">Tell me more</button>
+          <button class="block header__button" type="button"><a style="color: white;" href="#services">Tell me more</a></button>
         </div>
 
         <div class="header__right">
@@ -579,8 +580,8 @@
           <form class="contact__form">
             <div class="contact__form-left">
               <div class="form__names">
-                <input placeholder="Your Name *" class="form__names-first" required>
-                <input placeholder="Your Email *" class="form__names-second" required>
+                <input id="name" placeholder="Your Name *" class="form__names-first" required>
+                <input id="email" placeholder="Your Email *" class="form__names-second" required>
               </div>
 
               <div class="form__buttons">
@@ -592,7 +593,7 @@
             </div>
 
             <div class="contact__form-right">
-              <textarea placeholder="Your Text *" class="form__text" required></textarea>
+              <textarea id="message" placeholder="Your Text *" class="form__text" required></textarea>
             </div>
 
           </form>
