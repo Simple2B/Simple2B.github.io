@@ -1,0 +1,134 @@
+.contact {
+  padding-bottom: 80px;
+}
+
+.contact__header {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__header-title {
+  font-family: $f-open-sans;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  position: absolute;
+  top: 80px;
+}
+
+.contact__header-back {
+  font-family: $f-open-sans;
+  font-weight: bold;
+  font-size: 170px;
+  line-height: 232px;
+  color: $c-light-green;
+  opacity: 0.1;
+}
+
+.contact__header-description {
+  position: absolute;
+  max-width: 600px;
+  top: 140px;
+}
+
+.contact__form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form-left {
+  width: 440px;
+  margin-right: 30px;
+}
+
+.form__names-first {
+  font-family: $f-gentium;
+  font-size: 18px;
+  width: 437px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid rgba(107, 112, 92, 0.45);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+.form__names-second {
+  font-size: 18px;
+  font-family: $f-gentium;
+  width: 437px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid rgba(107, 112, 92, 0.45);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+.button__attach {
+  width: 175px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #6B705C;
+  box-sizing: border-box;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.attach {
+  overflow: hidden;
+  z-index: -19;
+  font-size: 0;
+  visibility: hidden;
+}
+
+.contact__button {
+  width: 175px;
+  height: 48px;
+  background: $c-green;
+  border: none;
+  border-radius: 3px;
+  font-family: $f-gentium;
+  font-size: 18px;
+  line-height: 21px;
+
+  cursor: pointer;
+  transition: background 3s;
+  align-items: center;
+  justify-content: center;
+  color: $c-white;
+}
+
+.contact__button:hover {
+  background: $c-dark-green;
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__form-right {
+  width: 440px;
+}
+
+.form__text {
+  font-size: 18px;
+  font-family: $f-gentium;
+  width: 437px;
+  height: 205px;
+  background: #FFFFFF;
+  border: 1px solid rgba(107, 112, 92, 0.45);
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 15px;
+}

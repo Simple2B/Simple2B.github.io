@@ -1,0 +1,41 @@
+.footer {
+  height: 98px;
+  background: $c-light-green;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98px;
+  padding-right: 50px;
+}
+
+.git,
+.fb,
+.in {
+  padding-right: 10px;
+  transition: transform 2ms;
+  cursor: pointer;
+}
+
+.git:hover,
+.fb:hover,
+.in:hover {
+  transform: scale(1.1);
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer__link {
+  color: #fff;
+  padding-right: 15px;
+
+}

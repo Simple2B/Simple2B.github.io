@@ -1,0 +1,41 @@
+// Core variables and mixins
+@import "base/variables";
+@import "header";
+@import "services";
+@import "profile";
+@import "technologies";
+@import "portfolio";
+@import "about";
+@import "join";
+@import "contact";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $c-white;
+  font-family: $f-gentium;
+  font-size: 18px;
+  color: $c-dark-green;
+}
+
+a {
+  text-decoration: none;
+  color: $c-dark-green;
+   white-space: nowrap;
+}
+
+section {
+  margin-top: 60px;
+}
+
+// .block {
+//   padding: 0 15px;
+// }
