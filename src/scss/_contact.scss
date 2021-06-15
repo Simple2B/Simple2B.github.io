@@ -43,7 +43,7 @@
   margin-right: 30px;
 }
 
-.form__names-first {
+.form__name{
   font-family: $f-gentium;
   font-size: 18px;
   width: 437px;
@@ -52,11 +52,10 @@
   border: 1px solid rgba(107, 112, 92, 0.45);
   box-sizing: border-box;
   border-radius: 3px;
-  margin-bottom: 30px;
   padding-left: 15px;
 }
 
-.form__names-second {
+.form__email {
   font-size: 18px;
   font-family: $f-gentium;
   width: 437px;
@@ -65,8 +64,11 @@
   border: 1px solid rgba(107, 112, 92, 0.45);
   box-sizing: border-box;
   border-radius: 3px;
-  margin-bottom: 30px;
   padding-left: 15px;
+}
+
+.help-block {
+  margin: 28px;
 }
 
 .button__attach {
@@ -113,7 +115,6 @@
 .form__buttons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .contact__form-right {

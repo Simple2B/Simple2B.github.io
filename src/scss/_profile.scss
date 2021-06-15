@@ -27,7 +27,7 @@
 .profile__container-back {
   font-family: $f-open-sans;
   font-weight: bold;
-  font-size: 170px;
+  font-size: calc(25px + 11vw);
   line-height: 232px;
   color: $c-light-green;
   opacity: 0.1;
@@ -53,4 +53,13 @@
 
 .profile__list-item:not(:last-child) {
   padding-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+ .profile__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+ }
 }

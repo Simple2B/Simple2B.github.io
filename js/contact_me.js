@@ -1,8 +1,9 @@
 $(function () {
 
-  const TARGET_HOST = 'https://ctm9v55l6h.execute-api.us-east-2.amazonaws.com/dev';
+  // const TARGET_HOST = 'https://ctm9v55l6h.execute-api.us-east-2.amazonaws.com/dev';
+  const TARGET_HOST = 'https://mailer.simple2b.net/';
 
-  $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+  $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
     submitError: function ($form, event, errors) {
       // additional error messages or events

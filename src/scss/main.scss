@@ -29,7 +29,11 @@ body {
 a {
   text-decoration: none;
   color: $c-dark-green;
-   white-space: nowrap;
+  white-space: nowrap;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 section {

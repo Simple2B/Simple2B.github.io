@@ -12,6 +12,7 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const sourcemaps = require('gulp-sourcemaps');
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -101,6 +102,7 @@ function js() {
     .src([
       './src/js/*.js',
     ])
+    .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
@@ -108,6 +110,7 @@ function js() {
     .pipe(rename({
       suffix: '.min'
     }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./js'))
     .pipe(browsersync.stream());
 }
