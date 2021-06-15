@@ -17,7 +17,7 @@
 .about__header-back {
   font-family: $f-open-sans;
   font-weight: bold;
-  font-size: 170px;
+  font-size: calc(25px + 11vw);
   line-height: 232px;
   color: $c-light-green;
   opacity: 0.1;
@@ -31,13 +31,14 @@
 
 .about__content-gallery {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 30px;
   padding-bottom: 60px;
+  flex-wrap: wrap;
 }
 
-.about__content-gallery-photo:not(:last-child) {
-  padding-right: 60px;
+.about__content-gallery-photo {
+  padding-bottom: 30px;
 }
 
 .about__content-head {
@@ -111,4 +112,40 @@
   font-family: $f-open-sans;
   font-weight: bold;
   line-height: 25px;
+}
+
+// @media (max-width: 1200px) {
+//   .about__content-gallery {
+//     justify-content: space-around;
+//   }
+
+//   .about__content-gallery-photo:not(:last-child) {
+//     margin: 30px 0 0 0;
+//   }
+
+//   .about__content-gallery:last-child {
+//     margin: 30px 0 0 0;
+//   }
+// }
+
+@media (max-width: 400px) {
+  .about__content-gallery-photo {
+    width: 300px;
+  }
+}
+
+@media (max-width:970px) {
+
+element.style {
+}
+.about__content-main-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.about__content-main-bio {
+  max-width: 382px;
+  margin-right: 10px;
+}
 }

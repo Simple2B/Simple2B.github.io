@@ -276,7 +276,10 @@
 
 @media (max-width: 1200px) {
   .services__content-block:not(:last-child) {
-    margin: 0;
+    margin: 30px 0 0 0;
+  }
+  .services__content-block:last-child {
+    margin: 30px 0 0 0;
   }
   .services__content {
     justify-content: space-around;
@@ -494,6 +497,10 @@
   justify-content: center;
 }
 
+.portfolio__content-block {
+  max-width: 435px;
+}
+
 .portfolio__content-title {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -554,7 +561,7 @@
 .portfolio__header-back {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 170px;
+  font-size: calc(25px + 11vw);
   line-height: 232px;
   color: #477915;
   opacity: 0.1;
@@ -569,6 +576,25 @@
 .portfolio__content-image {
   width: 432px;
   border-radius: 3px;
+}
+
+@media (max-width: 1060px) {
+  .portfolio__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+  }
+  .portfolio__content-block {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio__content-image {
+    width: 270px;
+  }
 }
 
 .about__header {
@@ -590,7 +616,7 @@
 .about__header-back {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 170px;
+  font-size: calc(25px + 11vw);
   line-height: 232px;
   color: #477915;
   opacity: 0.1;
@@ -604,13 +630,14 @@
 
 .about__content-gallery {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 30px;
   padding-bottom: 60px;
+  flex-wrap: wrap;
 }
 
-.about__content-gallery-photo:not(:last-child) {
-  padding-right: 60px;
+.about__content-gallery-photo {
+  padding-bottom: 30px;
 }
 
 .about__content-head {
@@ -687,6 +714,25 @@
   line-height: 25px;
 }
 
+@media (max-width: 400px) {
+  .about__content-gallery-photo {
+    width: 300px;
+  }
+}
+
+@media (max-width: 970px) {
+  .about__content-main-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  .about__content-main-bio {
+    max-width: 382px;
+    margin-right: 10px;
+  }
+}
+
 .join__header {
   position: relative;
   align-items: center;
@@ -706,7 +752,7 @@
 .join__header-back {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 170px;
+  font-size: calc(25px + 11vw);
   line-height: 232px;
   color: #477915;
   opacity: 0.1;
@@ -719,8 +765,9 @@
 }
 
 .join__content-text {
-  width: 800px;
+  max-width: 800px;
   margin: 60px auto;
+  padding: 0 20px;
 }
 
 .join__content-button {
@@ -769,7 +816,7 @@
 .contact__header-back {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 170px;
+  font-size: calc(20px + 11vw);
   line-height: 232px;
   color: #477915;
   opacity: 0.1;
@@ -794,7 +841,7 @@
 .form__name {
   font-family: "Gentium Basic", serif;
   font-size: 18px;
-  width: 437px;
+  width: 100%;
   height: 48px;
   background: #FFFFFF;
   border: 1px solid rgba(107, 112, 92, 0.45);
@@ -806,7 +853,7 @@
 .form__email {
   font-size: 18px;
   font-family: "Gentium Basic", serif;
-  width: 437px;
+  width: 100%;
   height: 48px;
   background: #FFFFFF;
   border: 1px solid rgba(107, 112, 92, 0.45);
@@ -872,13 +919,43 @@
 .form__text {
   font-size: 18px;
   font-family: "Gentium Basic", serif;
-  width: 437px;
+  width: 100%;
   height: 205px;
   background: #FFFFFF;
   border: 1px solid rgba(107, 112, 92, 0.45);
   box-sizing: border-box;
   border-radius: 3px;
   padding: 15px;
+}
+
+@media (max-width: 950px) {
+  .contact__form-right,
+  .contact__form-left {
+    width: 395px;
+  }
+}
+
+@media (max-width: 855px) {
+  .contact__form-right,
+  .contact__form-left {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__form-left {
+    margin: 0 0 15px;
+  }
+  .contact__form {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 390px) {
+  .contact__form-right,
+  .contact__form-left {
+    width: 300px;
+  }
 }
 
 .footer {
@@ -919,6 +996,15 @@
 .footer__link {
   color: #fff;
   padding-right: 15px;
+}
+
+@media (max-width: 449px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__social {
+    padding-right: 0;
+  }
 }
 
 * {

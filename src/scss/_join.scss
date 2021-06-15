@@ -17,7 +17,7 @@
 .join__header-back {
   font-family: $f-open-sans;
   font-weight: bold;
-  font-size: 170px;
+  font-size: calc(25px + 11vw);
   line-height: 232px;
   color: $c-light-green;
   opacity: 0.1;
@@ -30,8 +30,9 @@
 }
 
 .join__content-text {
-  width: 800px;
+  max-width: 800px;
   margin: 60px auto;
+  padding: 0 20px;
 }
 
 .join__content-button {

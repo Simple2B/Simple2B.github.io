@@ -3,6 +3,11 @@
   grid-template-columns: 435px 435px;
   gap: 150px;
   justify-content: center;
+
+}
+
+.portfolio__content-block {
+  max-width: 435px;
 }
 
 .portfolio__content-title {
@@ -65,7 +70,7 @@
 .portfolio__header-back {
   font-family: $f-open-sans;
   font-weight: bold;
-  font-size: 170px;
+  font-size: calc(25px + 11vw);
   line-height: 232px;
   color: $c-light-green;
   opacity: 0.1;
@@ -80,4 +85,26 @@
 .portfolio__content-image {
   width: 432px;
   border-radius: 3px;
+}
+
+@media (max-width: 1060px) {
+.portfolio__content {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  gap: 5px;
+  justify-content: space-around;
+}
+
+.portfolio__content-block {
+  margin-bottom: 40px;
+  text-align: center;
+}
+}
+
+@media (max-width:500px) {
+  .portfolio__content-image {
+    width: 270px;
+
+  }
 }

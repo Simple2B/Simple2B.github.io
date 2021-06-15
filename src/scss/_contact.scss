@@ -21,7 +21,7 @@
 .contact__header-back {
   font-family: $f-open-sans;
   font-weight: bold;
-  font-size: 170px;
+  font-size: calc(20px + 11vw);
   line-height: 232px;
   color: $c-light-green;
   opacity: 0.1;
@@ -46,7 +46,7 @@
 .form__name{
   font-family: $f-gentium;
   font-size: 18px;
-  width: 437px;
+  width: 100%;
   height: 48px;
   background: #FFFFFF;
   border: 1px solid rgba(107, 112, 92, 0.45);
@@ -58,7 +58,7 @@
 .form__email {
   font-size: 18px;
   font-family: $f-gentium;
-  width: 437px;
+  width: 100%;
   height: 48px;
   background: #FFFFFF;
   border: 1px solid rgba(107, 112, 92, 0.45);
@@ -124,11 +124,45 @@
 .form__text {
   font-size: 18px;
   font-family: $f-gentium;
-  width: 437px;
+  width: 100%;
   height: 205px;
   background: #FFFFFF;
   border: 1px solid rgba(107, 112, 92, 0.45);
   box-sizing: border-box;
   border-radius: 3px;
   padding: 15px;
+}
+
+@media (max-width:950px) {
+  .contact__form-right,
+  .contact__form-left {
+    width: 395px;
+
+}
+}
+
+@media (max-width:855px) {
+  .contact__form-right,
+  .contact__form-left {
+    width: 350px;
+}
+}
+
+@media (max-width:768px) {
+  .contact__form-left{
+    margin: 0 0 15px;
+  }
+
+  .contact__form {
+    flex-wrap: wrap;
+
+}
+
+}
+
+@media (max-width: 390px) {
+  .contact__form-right,
+  .contact__form-left {
+    width: 300px;
+}
 }
