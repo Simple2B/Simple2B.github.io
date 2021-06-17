@@ -37,7 +37,10 @@
 .footer__link {
   color: #fff;
   padding-right: 15px;
+}
 
+.footer__link:hover {
+  color: #fff;
 }
 
 @media (max-width: 449px) {

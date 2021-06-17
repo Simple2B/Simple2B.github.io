@@ -3,8 +3,8 @@ $(function () {
   // const TARGET_HOST = 'https://ctm9v55l6h.execute-api.us-east-2.amazonaws.com/dev';
   const TARGET_HOST = 'https://mailer.simple2b.net';
 
-  $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
-    preventSubmit: true,
+  $("#contactForm, #contactForm, #chosenFile").jqBootstrapValidation({
+    preventSubmit: false,
     submitError: function ($form, event, errors) {
       // additional error messages or events
     },
@@ -36,8 +36,14 @@ $(function () {
           method: 'POST',
           body: formData
         })
-        .then(() => {
+        .then((res) => {
+          console.log(res)
           // Success message
+          if(res.status !== 200){
+            console.log('error')
+            throw new Error('not 200')
+          }
+
           $('#success').html("<div class='alert alert-success'>");
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
