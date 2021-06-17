@@ -10,24 +10,30 @@
 
 .profile__container-head {
   position: relative;
-  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .profile__container-title {
-  position: absolute;
   font-family: $f-open-sans;
   font-weight: bold;
   font-size: 40px;
   line-height: 54px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 80px;
+}
+
+.profile__container__header-description {
+  position: absolute;
+  max-width: 600px;
+  top: 140px;
 }
 
 .profile__container-back {
   font-family: $f-open-sans;
   font-weight: bold;
-  font-size: calc(25px + 11vw);
+  font-size: calc(20px + 11vw);
   line-height: 232px;
   color: $c-light-green;
   opacity: 0.1;
