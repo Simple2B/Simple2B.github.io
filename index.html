@@ -42,40 +42,41 @@
 
           <ul class="header__nav_list">
             <li class="header__nav_item">
-              <a class="header__nav_link" href="#services">Services</a>
+              <a id="service-menu" class="header__nav_link" href="#services">Services</a>
             </li>
             <li class="header__nav_item">
-              <a class="header__nav_link" href="#profile">Profile</a>
+              <a id="profile-menu" class="header__nav_link" href="#profile">Profile</a>
             </li>
             <li class="header__nav_item">
-              <a class="header__nav_link" href="#technologies">Technologies</a>
+              <a id="technologies-menu" class="header__nav_link" href="#technologies">Technologies</a>
             </li>
             <li class="header__nav_item">
-              <a class="header__nav_link" href="#portfolio">Portfolio</a>
+              <a id="portfolio-menu" class="header__nav_link" href="#portfolio">Portfolio</a>
             </li>
             <li class="header__nav_item">
-              <a class="header__nav_link" href="#about">About us</a>
+              <a id="about-menu" class="header__nav_link" href="#about">About us</a>
             </li>
             <li class="header__nav_item">
-              <a class="header__nav_link" href="#contact">Contact us</a>
+              <a id="contact-menu" class="header__nav_link" href="#contact">Contact us</a>
             </li>
           </ul>
         </nav>
 
-        <h1 class="animate__animated animate__bounce block header__title-left ">Welcome to</h1>
-        <h1 class="animate__animated animate__bounce block header__title-left block">Simple2B</h1>
-        <p class="animate__animated animate__bounce block header__description">We deliver high-tech solutions to make
-          your<br>business success simple</p>
-        <button class="animate__animated animate__bounce block header__button" type="button"><a style="color: white;"
+        <h1 id="welcome1" class="animate__animated animate__bounce block header__title-left ">Welcome to</h1>
+        <h1 id="welcome2" class="animate__animated animate__bounce block header__title-left block">Simple2B</h1>
+        <p id="welcome-desc1" class="animate__animated animate__bounce block header__description-h">We deliver high-tech solutions to make
+          your</p>
+          <p id="welcome-desc2" class="animate__animated animate__bounce block header__description">business success simple</p>
+        <button class="animate__animated animate__bounce block header__button" type="button"><a id="welcome-button" style="color: white;"
             href="#services">Tell me
             more</a></button>
       </div>
 
       <div class="header__right">
         <div class="header__right-head">
-          <select class="lang-select">
-            <option value="en" class="lang-option" selected>English</option>
-            <option value="du" class="lang-option">Dutch</option>
+          <select onchange="change()" id="lan" class="lang-select">
+            <option value="1" class="lang-option" selected>English</option>
+            <option value="2" class="lang-option">Dutch</option>
           </select>
 
           <div class="burger__image">
@@ -90,29 +91,29 @@
 
             <ul class="burger__nav_list">
               <li class="burger__nav_item">
-                <a class="burger__nav_link" href="#services">Services</a>
+                <a id="service-menu-m" class="burger__nav_link" href="#services">Services</a>
               </li>
               <li class="burger__nav_item">
-                <a class="burger__nav_link" href="#profile">Profile</a>
+                <a id="profile-menu-m" class="burger__nav_link" href="#profile">Profile</a>
               </li>
               <li class="burger__nav_item">
-                <a class="burger__nav_link" href="#technologies">Technologies</a>
+                <a id="technologies-menu-m" class="burger__nav_link" href="#technologies">Technologies</a>
               </li>
               <li class="burger__nav_item">
-                <a class="burger__nav_link" href="#portfolio">Portfolio</a>
+                <a id="portfolio-menu-m" class="burger__nav_link" href="#portfolio">Portfolio</a>
               </li>
               <li class="burger__nav_item">
-                <a class="burger__nav_link" href="#about">About us</a>
+                <a id="about-menu-m" class="burger__nav_link" href="#about">About us</a>
               </li>
               <li class="burger__nav_item">
-                <a class="burger__nav_link" href="#contact">Contact us</a>
+                <a id="contact-menu-m" class="burger__nav_link" href="#contact">Contact us</a>
               </li>
             </ul>
           </nav>
 
         </div>
 
-        <h1 class="animate__animated animate__bounce header__title-right">Studio</h1>
+        <h1 id="welcome3" class="animate__animated animate__bounce header__title-right">Studio</h1>
       </div>
     </div>
   </header>
@@ -120,9 +121,9 @@
     <section class="services " id="services">
       <div class="services__container ">
         <div class="services__header">
-          <h2 class="services__header-title">Services</h2>
-          <p class="services__header-back">Services</p>
-          <p class="services__header-description">
+          <h2 id="services-title" class="services__header-title">Services</h2>
+          <p id="services-title-back" class="services__header-back">Services</p>
+          <p id="services-title-desc" class="services__header-description">
             We are the Team of enthusiasts of Web Application Development. Not only we love to deliver high-quality
             solutions for B2B, B2C, and Startups, we aim to ensure mutual success with our customers.
           </p>
@@ -134,15 +135,15 @@
               <img class="services__content-img" src="./images/solution_architecture.svg" alt="block">
             </div>
             <div class="services__content-block-text">
-              <h3 class="services__content-block-title">
+              <h3 id="architecture-title" class="services__content-block-title">
                 Solution architecture
               </h3>
               <div class="services__content-block-list">
                 <ul class="services-list">
-                  <li class="services-list-item">
+                  <li id="architecture-l1" class="services-list-item">
                     Project estimation to evaluate the duration of the project from initiation to the commercial launch
                   </li>
-                  <li class="services-list-item">
+                  <li id="architecture-l2" class="services-list-item">
                     We will create an architecture of your new web application or transform the architecture of your
                     existing one to meet the latest needs & requirements of your business
                   </li>
@@ -157,18 +158,18 @@
             </div>
 
             <div class="services__content-block-text">
-              <h3 class="services__content-block-title">
+              <h3 id="development-title" class="services__content-block-title">
                 Development
               </h3>
               <div class="services__content-block-list">
                 <ul class="services-list">
-                  <li class="services-list-item">
+                  <li id="development-l1" class="services-list-item">
                     Coding phase
                   </li>
-                  <li class="services-list-item">
+                  <li id="development-l2" class="services-list-item">
                     Testing phase
                   </li>
-                  <li class="services-list-item">
+                  <li id="development-l3" class="services-list-item">
                     Regular basis reporting for you to track the project progress
                   </li>
                 </ul>
@@ -182,12 +183,12 @@
             </div>
 
             <div class="services__content-block-text">
-              <h3 class="services__content-block-title">
+              <h3 id="support-title" class="services__content-block-title">
                 Support service
               </h3>
               <div class="services__content-block-list">
                 <ul class="services-list">
-                  <li class="services-list-item">
+                  <li id="support-l1" class="services-list-item">
                     We want our partnership to last. To ensure the continuity of your business we will be there to help
                     you
                     with new ideas implementation & other post-development services
@@ -205,24 +206,24 @@
     <section class="profile" id="profile">
       <div class="profile__container">
         <div class="profile__container-head">
-          <h2 class="profile__container-title">Profile</h2>
-          <p class="profile__container-back">Profile</p>
-          <p class="profile__container__header-description">
+          <h2 id="profile-title" class="profile__container-title">Profile</h2>
+          <p id="profile-title-back"  class="profile__container-back">Profile</p>
+          <p id="profile-desc"  class="profile__container__header-description">
             What we do.
           </p>
         </div>
 
         <div class="profile__container-list">
           <ul class="profile__list">
-            <li class="profile__list-item">Architecture design, UX and development of modern web & mobile applications
+            <li id="profile-l1" class="profile__list-item">Architecture design, UX and development of modern web & mobile applications
             </li>
-            <li class="profile__list-item">Full-stack end-to-end development with cutting-edge technologies</li>
-            <li class="profile__list-item">Frontend expertise in React & Redux</li>
-            <li class="profile__list-item">Backend expertise in Python apps on Django, Flask, AsyncIO, SQLAlchemy</li>
-            <li class="profile__list-item">Deployment and CI expertise in Docker, Nginx</li>
-            <li class="profile__list-item">Mobile & Desktop: React Native, Electron</li>
-            <li class="profile__list-item">Following TDD and E2E testing</li>
-            <li class="profile__list-item">
+            <li id="profile-l2" class="profile__list-item">Full-stack end-to-end development with cutting-edge technologies</li>
+            <li id="profile-l3" class="profile__list-item">Frontend expertise in React & Redux</li>
+            <li id="profile-l4" class="profile__list-item">Backend expertise in Python apps on Django, Flask, AsyncIO, SQLAlchemy</li>
+            <li id="profile-l5" class="profile__list-item">Deployment and CI expertise in Docker, Nginx</li>
+            <li id="profile-l6" class="profile__list-item">Mobile & Desktop: React Native, Electron</li>
+            <li id="profile-l7" class="profile__list-item">Following TDD and E2E testing</li>
+            <li id="profile-l8" class="profile__list-item">
               Agile methodology</li>
           </ul>
         </div>
@@ -233,9 +234,9 @@
     <section class="technologies" id="technologies">
       <div class="technologies__container">
         <div class="technologies__header">
-          <h2 class="technologies__header-title">Featured technologies</h2>
-          <p class="technologies__header-back">Technologies</p>
-          <p class="technologies__header-description">
+          <h2 id="technologies-title" class="technologies__header-title">Featured technologies</h2>
+          <p id="technologies-title-back" class="technologies__header-back">Technologies</p>
+          <p id="technologies-desc" class="technologies__header-description">
             Effective solutions built in a simple way
           </p>
         </div>
@@ -252,7 +253,7 @@
                 Flask
               </h3>
 
-              <div class="technologies__content-description">Flask is a web application framework. It is designed to
+              <div id="flask" class="technologies__content-description">Flask is a web application framework. It is designed to
                 make getting started quick and easy, with the ability to scale up to complex applications & to keep the
                 core of the application simple.</div>
             </div>
@@ -265,7 +266,7 @@
                 React JS
               </h3>
 
-              <div class="technologies__content-description">React JS is a library for building composable user
+              <div id="react" class="technologies__content-description">React JS is a library for building composable user
                 interfaces or UI components. It encourages the creation of reusable UI components, which present data
                 that changes over time.</div>
             </div>
@@ -286,7 +287,7 @@
                 Fast Api
               </h3>
 
-              <div class="technologies__content-description">Fast API is a modern, open-source, fast, and highly
+              <div id="api" class="technologies__content-description">Fast API is a modern, open-source, fast, and highly
                 performant Python web framework used for building Web APIs and is based on Python 3.6+ standard type
                 hints.</div>
             </div>
@@ -299,7 +300,7 @@
                 Type Script
               </h3>
 
-              <div class="technologies__content-description">TypeScript is a programming language developed and
+              <div id="type-script" class="technologies__content-description">TypeScript is a programming language developed and
                 maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static
                 typing to the language.</div>
             </div>
@@ -320,7 +321,7 @@
                 React Native
               </h3>
 
-              <div class="technologies__content-description">React Native is a popular mobile app framework that allows
+              <div id="react-native" class="technologies__content-description">React Native is a popular mobile app framework that allows
                 you to build mobile apps for iOS and Android. The framework lets you create an application for various
                 platforms by using the same codebase.</div>
             </div>
@@ -333,7 +334,7 @@
                 AWS
               </h3>
 
-              <div class="technologies__content-description">Amazon Web Services is a subsidiary of Amazon providing
+              <div id="aws" class="technologies__content-description">Amazon Web Services is a subsidiary of Amazon providing
                 on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered
                 pay-as-you-go basis.</div>
             </div>
@@ -354,7 +355,7 @@
                 Django
               </h3>
 
-              <div class="technologies__content-description">Django is a Python-based free and open-source web framework
+              <div id="django" class="technologies__content-description">Django is a Python-based free and open-source web framework
                 that follows the model–template–views architectural pattern. Django's primary goal is to ease the
                 creation of complex, database-driven websites.</div>
             </div>
@@ -368,9 +369,9 @@
     <section class="portfolio" id="portfolio">
       <div class="portfolio__container">
         <div class="portfolio__header">
-          <h2 class="portfolio__header-title">Portfolio</h2>
-          <p class="portfolio__header-back">Portfolio</p>
-          <p class="portfolio__header-description">
+          <h2 id="portfolio-title" class="portfolio__header-title">Portfolio</h2>
+          <p id="portfolio-title-back" class="portfolio__header-back">Portfolio</p>
+          <p id="portfolio-desc"  class="portfolio__header-description">
             Some of our projects are below. You can see more information by clicking on a button.
           </p>
         </div>
@@ -380,13 +381,13 @@
           <div class="portfolio__content-block">
             <img class="portfolio__content-image" src="/images/waldup.png" alt="">
             <h3 class="portfolio__content-title"><a href="https://www.waldup.com/">Waldup</a></h3>
-            <p class="portfolio__content-description">
+            <p id="waldup" class="portfolio__content-description">
               This application helps you to prepare and plan your hiking and trail running activities. Smart waypoints
               and race sheets. Customized timings.
             </p>
 
             <button class="portfolio__content-button"><a
-                href="https://www.upwork.com/ag/simple2b/portfolio/project/1404441363743989760"
+                href="https://www.upwork.com/ag/simple2b/portfolio/project/1404441363743989760" id="more1"
                 class="portfolio__content-link">More</a></button>
           </div>
 
@@ -395,13 +396,13 @@
           <div class="portfolio__content-block">
             <img class="portfolio__content-image" src="/images/mockmate.png" alt="">
             <h3 class="portfolio__content-title"><a href="https://mockmate-hiring.herokuapp.com/">Mockmate</a></h3>
-            <p class="portfolio__content-description">
+            <p id="mockmate" class="portfolio__content-description">
               Application for HR experts and candidates that utilize AI & ML algorithms to automate hiring processes as
               a part of the team
             </p>
 
             <button class="portfolio__content-button"><a
-                href="https://www.upwork.com/ag/simple2b/portfolio/project/1404448258230788096"
+                href="https://www.upwork.com/ag/simple2b/portfolio/project/1404448258230788096" id="more2"
                 class="portfolio__content-link">More</a></button>
           </div>
 
@@ -409,13 +410,13 @@
             <img class="portfolio__content-image" src="/images/Quotations.png" alt="">
             <h3 class="portfolio__content-title"><a href="https://flora.simple2b.net/">Quotations management<br>
                 application</a></h3>
-            <p class="portfolio__content-description">
+            <p id="quotations" class="portfolio__content-description">
               Enable users to prepare custom quotations for clients. Include 3rd party application integration user &
               documents management. Documents can be converted to PDF and DOCX.
             </p>
 
             <button class="portfolio__content-button"><a
-                href="https://www.upwork.com/ag/simple2b/portfolio/project/1404469732952547328"
+                href="https://www.upwork.com/ag/simple2b/portfolio/project/1404469732952547328" id="more3"
                 class="portfolio__content-link">More</a></button>
 
           </div>
@@ -427,9 +428,9 @@
     <section class="about" id="about">
       <div class="about__container">
         <div class="about__header">
-          <h2 class="about__header-title">About us</h2>
-          <p class="about__header-back">About us</p>
-          <p class="about__header-description">
+          <h2 id="about-title" class="about__header-title">About us</h2>
+          <p id="about-title-back" class="about__header-back">About us</p>
+          <p id="about-desc" class="about__header-description">
             Let's meet our team.
           </p>
         </div>
@@ -459,7 +460,7 @@
                       </div>
                       <div class="about__content-main-block">
                         <!-- <img src="/images/left.svg" class="about__content-main-arrow"/> -->
-                        <div class="about__content-main-bio">
+                        <div id="bio1" class="about__content-main-bio">
                           Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                           classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
                           Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
@@ -491,7 +492,7 @@
                       </div>
                       <div class="about__content-main-block">
 
-                        <div class="about__content-main-bio">
+                        <div id="bio2" class="about__content-main-bio">
                           Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                           classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
                           Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
@@ -606,15 +607,15 @@
     <section class="join">
       <div class="join__container">
         <div class="join__header">
-          <h2 class="join__header-title">Join us</h2>
-          <p class="join__header-back">Join us</p>
-          <p class="join__header-description">
+          <h2 id="join-title" class="join__header-title">Join us</h2>
+          <p id="join-title-back" class="join__header-back">Join us</p>
+          <p id="join-title-desc" class="join__header-description">
             If you want to join us fill simple form below.
           </p>
         </div>
 
         <div class="join__content">
-          <div class="join__content-text">
+          <div id="join-text" class="join__content-text">
             Where can I get some?<br>
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
             some form, by injected humour, or randomised words which don't look even slightly believable. If you are
@@ -626,7 +627,7 @@
             words etc.
           </div>
 
-          <button class="join__content-button">
+          <button id="join-button" class="join__content-button">
             Join us
           </button>
         </div>
@@ -637,9 +638,9 @@
     <section class="contact" id="contact">
       <div class="contact__container">
         <div class="contact__header">
-          <h2 class="contact__header-title">Contact us</h2>
-          <p class="contact__header-back">Contact us</p>
-          <p class="contact__header-description">
+          <h2 id="contact-title" class="contact__header-title">Contact us</h2>
+          <p id="contact-title-back" class="contact__header-back">Contact us</p>
+          <p id="contact-desc"  class="contact__header-description">
             Feel free to contact us if you have any questions.
           </p>
         </div>
@@ -715,8 +716,8 @@
     </div>
 
     <div class="footer__links">
-      <a class="footer__link" href="/policy-eng.html">Privacy Policy</a>
-      <a class="footer__link" href="/terms-eng.html">Terms of Use</a>
+      <a id="policy" class="footer__link" href="/policy-eng.html">Privacy Policy</a>
+      <a id="terms" class="footer__link" href="/terms-eng.html">Terms of Use</a>
     </div>
   </footer>
 
@@ -757,6 +758,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
+
+<!-- Language switch scripts for this template -->
+  <script src="js/languages-new.js" defer=""></script>
 
   <script type="text/javascript" src="js/main.js"></script>
 
