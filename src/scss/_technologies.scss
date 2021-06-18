@@ -56,7 +56,7 @@
 .technologies__content-text {
   max-width: 435px;
   min-width: 435px;
-  height: 275px;
+  height: 305px;
   background: $c-light-green-opac;
   border: $c-border;
   box-sizing: border-box;
@@ -66,7 +66,7 @@
 
 .technologies__content-text-l {
   max-width: 435px;
-  height: 275px;
+  height: 305px;
   background: $c-light-green-opac;
   border: $c-border;
   box-sizing: border-box;
@@ -94,7 +94,7 @@
 .technologies__header-back {
   font-family: $f-open-sans;
   font-weight: bold;
-  font-size: calc(13px + 11vw);
+  font-size: calc(9px + 11vw);
   line-height: 232px;
   color: $c-light-green;
   opacity: 0.1;
@@ -104,6 +104,7 @@
   position: absolute;
   max-width: 600px;
   top: 140px;
+  text-align: center;
 }
 
 .technologies__content-description {
@@ -147,5 +148,11 @@
 
   .technologies__content-image-r {
     margin: 0;
+  }
+}
+
+@media (max-width: 445px) {
+  .technologies__header-description {
+    top: 185px;
   }
 }

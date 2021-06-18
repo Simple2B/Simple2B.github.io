@@ -7,18 +7,21 @@ function change() {
         document.getElementById("portfolio-menu").textContent="Portfolio"
         document.getElementById("about-menu").textContent="About us"
         document.getElementById("contact-menu").textContent="Contact us"
+
         document.getElementById("service-menu-m").textContent="Services"
         document.getElementById("profile-menu-m").textContent="Profile"
         document.getElementById("technologies-menu-m").textContent="Technologies"
         document.getElementById("portfolio-menu-m").textContent="Portfolio"
         document.getElementById("about-menu-m").textContent="About us"
         document.getElementById("contact-menu-m").textContent="Contact us"
+
         document.getElementById("welcome1").textContent="Welcome to"
         document.getElementById("welcome2").textContent="Simple2B"
         document.getElementById("welcome3").textContent="Studio"
         document.getElementById("welcome-desc1").textContent="We deliver high-tech solutions to make your"
         document.getElementById("welcome-desc2").textContent="business success simple"
         document.getElementById("welcome-button").textContent="Tell me more"
+
         document.getElementById("services-title").textContent="Services"
         document.getElementById("services-title-back").textContent="Services"
         document.getElementById("services-title-desc").textContent="We are the Team of enthusiasts of Web Application Development. Not only we love to deliver high-quality solutions for B2B, B2C, and Startups, we aim to ensure mutual success with our customers."
@@ -58,7 +61,7 @@ function change() {
 
         document.getElementById("portfolio-title").textContent="Portfolio"
         document.getElementById("portfolio-title-back").textContent="Portfolio"
-        document.getElementById("portfolio__header-description").textContent="Some of our projects are below. You can see more information by clicking on a button."
+        document.getElementById("portfolio-desc").textContent="Some of our projects are below. You can see more information by clicking on a button."
 
         document.getElementById("waldup").textContent="This application helps you to prepare and plan your hiking and trail running activities. Smart waypoints and race sheets. Customized timings."
         document.getElementById("more1").textContent="More"
@@ -149,6 +152,7 @@ function change() {
         document.getElementById("react-native").textContent="React Native is een populair framework voor mobiele apps waarmee je mobiele apps voor iOS en Android kunt bouwen. Met het framework kun je een applicatie maken voor verschillende platforms door dezelfde codebase te gebruiken."
         document.getElementById("aws").textContent="Amazon Web Services is een dochteronderneming van Amazon die on-demand cloudcomputingplatforms en API's levert aan particulieren, bedrijven en overheden, op basis van betaald gebruik."
         document.getElementById("django").textContent="Django is een Python Web-framework van hoog niveau dat snelle ontwikkeling en een schoon, pragmatisch ontwerp aanmoedigt."
+
         document.getElementById("portfolio-title").textContent="Portefeuille"
         document.getElementById("portfolio-title-back").textContent="Portefeuille"
         document.getElementById("portfolio-desc").textContent="Enkele van onze projecten staan ​​hieronder. U kunt meer informatie zien door op een knop te klikken."

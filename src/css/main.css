@@ -261,7 +261,7 @@
 
 .services__content-block-text {
   max-width: 350px;
-  height: 427px;
+  height: 465px;
   background: rgba(71, 121, 21, 0.05);
   border: 1px solid rgba(221, 209, 45, 0.15);
   box-sizing: border-box;
@@ -285,6 +285,7 @@
 
 .services-list-item {
   padding-bottom: 15px;
+  padding-right: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -420,7 +421,7 @@
 .technologies__content-text {
   max-width: 435px;
   min-width: 435px;
-  height: 275px;
+  height: 305px;
   background: rgba(71, 121, 21, 0.05);
   border: 1px solid rgba(221, 209, 45, 0.15);
   box-sizing: border-box;
@@ -430,7 +431,7 @@
 
 .technologies__content-text-l {
   max-width: 435px;
-  height: 275px;
+  height: 305px;
   background: rgba(71, 121, 21, 0.05);
   border: 1px solid rgba(221, 209, 45, 0.15);
   box-sizing: border-box;
@@ -458,7 +459,7 @@
 .technologies__header-back {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: calc(13px + 11vw);
+  font-size: calc(9px + 11vw);
   line-height: 232px;
   color: #477915;
   opacity: 0.1;
@@ -468,6 +469,7 @@
   position: absolute;
   max-width: 600px;
   top: 140px;
+  text-align: center;
 }
 
 .technologies__content-description {
@@ -506,6 +508,12 @@
   }
   .technologies__content-image-r {
     margin: 0;
+  }
+}
+
+@media (max-width: 445px) {
+  .technologies__header-description {
+    top: 185px;
   }
 }
 
@@ -580,7 +588,7 @@
 .portfolio__header-back {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: calc(25px + 11vw);
+  font-size: calc(19px + 11vw);
   line-height: 232px;
   color: #477915;
   opacity: 0.1;
@@ -647,6 +655,7 @@
   position: absolute;
   max-width: 600px;
   top: 140px;
+  text-align: center;
 }
 
 .about__content-gallery {
@@ -940,6 +949,7 @@
   line-height: 54px;
   position: absolute;
   top: 80px;
+  text-align: center;
 }
 
 .join__header-back {
@@ -955,6 +965,7 @@
   position: absolute;
   max-width: 600px;
   top: 140px;
+  text-align: center;
 }
 
 .join__content-text {
@@ -1004,6 +1015,7 @@
   line-height: 54px;
   position: absolute;
   top: 80px;
+  text-align: center;
 }
 
 .contact__header-back {
@@ -1019,6 +1031,7 @@
   position: absolute;
   max-width: 600px;
   top: 140px;
+  text-align: center;
 }
 
 .contact__form {
