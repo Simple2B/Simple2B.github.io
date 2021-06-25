@@ -1,591 +1,796 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple2B Agency</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple2B Agency</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-  </script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet" />
+    <!-- ChiefSlider CSS -->
+    <link rel="stylesheet" href="css/chief-slider.css" />
+    <!-- ChiefSlider JavaScript -->
+    <script defer src="js/chief-slider.js"></script>
 
-  <link href="css/main.min.css" rel="stylesheet">
-  <!-- ChiefSlider CSS -->
-  <link rel="stylesheet" href="css/chief-slider.css">
-  <!-- ChiefSlider JavaScript -->
-  <script defer src="js/chief-slider.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap"
-    rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__left">
+          <nav class="header__nav">
+            <div class="header_logo">
+              <a href="#"
+                ><img
+                  class="header_logo-img"
+                  src="./images/logo-simple2b.svg"
+                  alt="logo"
+              /></a>
+            </div>
 
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__container">
-      <div class="header__left">
-        <nav class="header__nav">
-
-          <div class="header_logo">
-            <a href="#"><img class="header_logo-img" src="./images/logo-simple2b.svg" alt="logo"></a>
-          </div>
-
-          <ul class="header__nav_list">
-            <li class="header__nav_item">
-              <a id="service-menu" class="header__nav_link" href="#services">Services</a>
-            </li>
-            <li class="header__nav_item">
-              <a id="profile-menu" class="header__nav_link" href="#profile">Profile</a>
-            </li>
-            <li class="header__nav_item">
-              <a id="technologies-menu" class="header__nav_link" href="#technologies">Technologies</a>
-            </li>
-            <li class="header__nav_item">
-              <a id="portfolio-menu" class="header__nav_link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="header__nav_item">
-              <a id="about-menu" class="header__nav_link" href="#about">About us</a>
-            </li>
-            <li class="header__nav_item">
-              <a id="contact-menu" class="header__nav_link" href="#contact">Contact us</a>
-            </li>
-          </ul>
-        </nav>
-
-        <h1 id="welcome1" class="header__title-left ">Welcome to</h1>
-        <h1 id="welcome2" class="header__title-left block">Simple2B</h1>
-        <p id="welcome-desc1" class="header__description-h">We deliver high-tech solutions to make
-          your</p>
-          <p id="welcome-desc2" class="header__description">business success simple</p>
-        <button class="header__button" type="button"><a id="welcome-button" style="color: white;"
-            href="#services">Tell me
-            more</a></button>
-      </div>
-
-      <div class="header__right">
-        <div class="header__right-head">
-          <select onchange="change()" id="lan" class="lang-select">
-            <option value="1" class="lang-option" selected>English</option>
-            <option value="2" class="lang-option">Dutch</option>
-          </select>
-
-          <div class="burger__image">
-            <img src="./images/hamburger-menu.svg" alt="burger">
-          </div>
-
-        </div>
-
-        <div class="burger">
-
-          <nav class="burger__nav">
-
-            <ul class="burger__nav_list">
-              <li class="burger__nav_item">
-                <a id="service-menu-m" class="burger__nav_link" href="#services">Services</a>
+            <ul class="header__nav_list">
+              <li class="header__nav_item">
+                <a id="service-menu" class="header__nav_link" href="#services"
+                  >Services</a
+                >
               </li>
-              <li class="burger__nav_item">
-                <a id="profile-menu-m" class="burger__nav_link" href="#profile">Profile</a>
+              <li class="header__nav_item">
+                <a id="profile-menu" class="header__nav_link" href="#profile"
+                  >Profile</a
+                >
               </li>
-              <li class="burger__nav_item">
-                <a id="technologies-menu-m" class="burger__nav_link" href="#technologies">Technologies</a>
+              <li class="header__nav_item">
+                <a
+                  id="technologies-menu"
+                  class="header__nav_link"
+                  href="#technologies"
+                  >Technologies</a
+                >
               </li>
-              <li class="burger__nav_item">
-                <a id="portfolio-menu-m" class="burger__nav_link" href="#portfolio">Portfolio</a>
+              <li class="header__nav_item">
+                <a
+                  id="portfolio-menu"
+                  class="header__nav_link"
+                  href="#portfolio"
+                  >Portfolio</a
+                >
               </li>
-              <li class="burger__nav_item">
-                <a id="about-menu-m" class="burger__nav_link" href="#about">About us</a>
+              <li class="header__nav_item">
+                <a id="about-menu" class="header__nav_link" href="#about"
+                  >About us</a
+                >
               </li>
-              <li class="burger__nav_item">
-                <a id="contact-menu-m" class="burger__nav_link" href="#contact">Contact us</a>
+              <li class="header__nav_item">
+                <a id="contact-menu" class="header__nav_link" href="#contact"
+                  >Contact us</a
+                >
               </li>
             </ul>
           </nav>
 
-        </div>
-
-        <h1 id="welcome3" class="header__title-right">Studio</h1>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="services " id="services">
-      <div class="services__container ">
-        <div class="services__header">
-          <h2 id="services-title" class="services__header-title">Services</h2>
-          <p id="services-title-back" class="services__header-back">Services</p>
-          <p id="services-title-desc" class="services__header-description">
-            We are the Team of enthusiasts of Web Application Development. Not only we love to deliver high-quality
-            solutions for B2B, B2C, and Startups, we aim to ensure mutual success with our customers.
+          <h1 id="welcome1" class="header__title-left">Welcome to</h1>
+          <h1 id="welcome2" class="header__title-left block">Simple2B</h1>
+          <p id="welcome-desc1" class="header__description-h">
+            We help businesses to succeed through innovative
           </p>
+          <p id="welcome-desc2" class="header__description">
+            and reliable solutions
+          </p>
+          <button class="header__button" type="button">
+            <a id="welcome-button" style="color: white" href="#services"
+              >Tell me more</a
+            >
+          </button>
         </div>
 
-        <div class="services__content">
-          <div class="services__content-block">
-            <div class="services__content-block-image">
-              <img class="services__content-img" src="./images/solution_architecture.svg" alt="block">
+        <div class="header__right">
+          <div class="header__right-head">
+            <select onchange="change()" id="lan" class="lang-select">
+              <option value="1" class="lang-option" selected>English</option>
+              <option value="2" class="lang-option">Dutch</option>
+            </select>
+
+            <div class="burger__image">
+              <img src="./images/hamburger-menu.svg" alt="burger" />
             </div>
-            <div class="services__content-block-text">
-              <h3 id="architecture-title" class="services__content-block-title">
-                Solution architecture
-              </h3>
-              <div class="services__content-block-list">
-                <ul class="services-list">
-                  <li id="architecture-l1" class="services-list-item">
-                    Project estimation to evaluate the duration of the project from initiation to the commercial launch
-                  </li>
-                  <li id="architecture-l2" class="services-list-item">
-                    We will create an architecture of your new web application or transform the architecture of your
-                    existing one to meet the latest needs & requirements of your business
-                  </li>
-                </ul>
+          </div>
+
+          <div class="burger">
+            <nav class="burger__nav">
+              <ul class="burger__nav_list">
+                <li class="burger__nav_item">
+                  <a
+                    id="service-menu-m"
+                    class="burger__nav_link"
+                    href="#services"
+                    >Services</a
+                  >
+                </li>
+                <li class="burger__nav_item">
+                  <a
+                    id="profile-menu-m"
+                    class="burger__nav_link"
+                    href="#profile"
+                    >Profile</a
+                  >
+                </li>
+                <li class="burger__nav_item">
+                  <a
+                    id="technologies-menu-m"
+                    class="burger__nav_link"
+                    href="#technologies"
+                    >Technologies</a
+                  >
+                </li>
+                <li class="burger__nav_item">
+                  <a
+                    id="portfolio-menu-m"
+                    class="burger__nav_link"
+                    href="#portfolio"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="burger__nav_item">
+                  <a id="about-menu-m" class="burger__nav_link" href="#about"
+                    >About us</a
+                  >
+                </li>
+                <li class="burger__nav_item">
+                  <a
+                    id="contact-menu-m"
+                    class="burger__nav_link"
+                    href="#contact"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <h1 id="welcome3" class="header__title-right">Studio</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="services" id="services">
+        <div class="services__container">
+          <div class="services__header">
+            <h2 id="services-title" class="services__header-title">Services</h2>
+            <p id="services-title-back" class="services__header-back">
+              Services
+            </p>
+            <p id="services-title-desc" class="services__header-description">
+              We are the Team of enthusiasts of Web Application Development. Not
+              only we love to deliver high-quality solutions for B2B, B2C, and
+              Startups, we aim to ensure mutual success with our customers.
+            </p>
+          </div>
+
+          <div class="services__content">
+            <div class="services__content-block">
+              <div class="services__content-block-image">
+                <img
+                  class="services__content-img"
+                  src="./images/solution_architecture.svg"
+                  alt="block"
+                />
+              </div>
+              <div class="services__content-block-text">
+                <h3
+                  id="architecture-title"
+                  class="services__content-block-title"
+                >
+                  Solution architecture
+                </h3>
+                <div class="services__content-block-list">
+                  <ul class="services-list">
+                    <li id="architecture-l1" class="services-list-item">
+                      Project estimation to evaluate the duration of the project
+                      from initiation to the commercial launch
+                    </li>
+                    <li id="architecture-l2" class="services-list-item">
+                      We will create an architecture of your new web application
+                      or transform the architecture of your existing one to meet
+                      the latest needs & requirements of your business
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__content-block">
+              <div class="services__content-block-image">
+                <img
+                  class="services__content-img"
+                  src="./images/development.svg"
+                  alt="block"
+                />
+              </div>
+
+              <div class="services__content-block-text">
+                <h3
+                  id="development-title"
+                  class="services__content-block-title"
+                >
+                  Development
+                </h3>
+                <div class="services__content-block-list">
+                  <ul class="services-list">
+                    <li id="development-l1" class="services-list-item">
+                      Coding phase
+                    </li>
+                    <li id="development-l2" class="services-list-item">
+                      Testing phase
+                    </li>
+                    <li id="development-l3" class="services-list-item">
+                      Regular basis reporting for you to track the project
+                      progress
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__content-block">
+              <div class="services__content-block-image">
+                <img
+                  class="services__content-img"
+                  src="./images/support_service.svg"
+                  alt="block"
+                />
+              </div>
+
+              <div class="services__content-block-text">
+                <h3 id="support-title" class="services__content-block-title">
+                  Support service
+                </h3>
+                <div class="services__content-block-list">
+                  <ul class="services-list">
+                    <li id="support-l1" class="services-list-item">
+                      We want our partnership to last. To ensure the continuity
+                      of your business we will be there to help you with new
+                      ideas implementation & other post-development services
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="services__content-block">
-            <div class="services__content-block-image">
-              <img class="services__content-img" src="./images/development.svg" alt="block">
+      <section class="profile" id="profile">
+        <div class="profile__container">
+          <div class="profile__container-head">
+            <h2 id="profile-title" class="profile__container-title">Profile</h2>
+            <p id="profile-title-back" class="profile__container-back">
+              Profile
+            </p>
+            <p id="profile-desc" class="profile__container__header-description">
+              What we do.
+            </p>
+          </div>
+
+          <div class="profile__container-list">
+            <ul class="profile__list">
+              <li id="profile-l1" class="profile__list-item">
+                Architecture design, UX and development of modern web & mobile
+                applications
+              </li>
+              <li id="profile-l2" class="profile__list-item">
+                Full-stack end-to-end development with cutting-edge technologies
+              </li>
+              <li id="profile-l3" class="profile__list-item">
+                Frontend expertise in React & Redux
+              </li>
+              <li id="profile-l4" class="profile__list-item">
+                Backend expertise in Python apps on Django, Flask, AsyncIO,
+                SQLAlchemy
+              </li>
+              <li id="profile-l5" class="profile__list-item">
+                Deployment and CI expertise in Docker, Nginx
+              </li>
+              <li id="profile-l6" class="profile__list-item">
+                Mobile & Desktop: React Native, Electron
+              </li>
+              <li id="profile-l7" class="profile__list-item">
+                Following TDD and E2E testing
+              </li>
+              <li id="profile-l8" class="profile__list-item">
+                Agile methodology
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="technologies" id="technologies">
+        <div class="technologies__container">
+          <div class="technologies__header">
+            <h2 id="technologies-title" class="technologies__header-title">
+              Featured technologies
+            </h2>
+            <p id="technologies-title-back" class="technologies__header-back">
+              Technologies
+            </p>
+            <p id="technologies-desc" class="technologies__header-description">
+              Effective solutions built in a simple way
+            </p>
+          </div>
+
+          <div class="technologies__content">
+            <!-- flask -->
+            <div class="technologies__content-block-l">
+              <div class="technologies__content-image-l">
+                <img src="/images/flask.svg" alt="logo" />
+              </div>
+
+              <div class="technologies__content-text-l">
+                <h3 class="technologies__content-title">Flask</h3>
+
+                <div id="flask" class="technologies__content-description">
+                  Flask is a web application framework. It is designed to make
+                  getting started quick and easy, with the ability to scale up
+                  to complex applications & to keep the core of the application
+                  simple.
+                </div>
+              </div>
             </div>
+            <!-- react -->
+            <div class="technologies__content-block-r">
+              <div class="technologies__content-text">
+                <h3 class="technologies__content-title">React JS</h3>
 
-            <div class="services__content-block-text">
-              <h3 id="development-title" class="services__content-block-title">
-                Development
-              </h3>
-              <div class="services__content-block-list">
-                <ul class="services-list">
-                  <li id="development-l1" class="services-list-item">
-                    Coding phase
-                  </li>
-                  <li id="development-l2" class="services-list-item">
-                    Testing phase
-                  </li>
-                  <li id="development-l3" class="services-list-item">
-                    Regular basis reporting for you to track the project progress
-                  </li>
-                </ul>
+                <div id="react" class="technologies__content-description">
+                  React JS is a library for building composable user interfaces
+                  or UI components. It encourages the creation of reusable UI
+                  components, which present data that changes over time.
+                </div>
+              </div>
+
+              <div class="technologies__content-image-r">
+                <img src="/images/react.svg" alt="logo" />
+              </div>
+            </div>
+            <!-- api -->
+            <div class="technologies__content-block-l">
+              <div class="technologies__content-image-l">
+                <img src="/images/fast_api.svg" alt="logo" />
+              </div>
+
+              <div class="technologies__content-text-l">
+                <h3 class="technologies__content-title">Fast Api</h3>
+
+                <div id="api" class="technologies__content-description">
+                  Fast API is a modern, open-source, fast, and highly
+                  performance Python web framework used for building Web APIs
+                  and is based on Python 3.6+ standard type hints.
+                </div>
+              </div>
+            </div>
+            <!-- type script -->
+            <div class="technologies__content-block-r">
+              <div class="technologies__content-text">
+                <h3 class="technologies__content-title">Type Script</h3>
+
+                <div id="type-script" class="technologies__content-description">
+                  TypeScript is a programming language developed and maintained
+                  by Microsoft. It is a strict syntactical superset of
+                  JavaScript and adds optional static typing to the language.
+                </div>
+              </div>
+
+              <div class="technologies__content-image-r">
+                <img src="/images/type_script.svg" alt="logo" />
+              </div>
+            </div>
+            <!-- react native -->
+            <div class="technologies__content-block-l">
+              <div class="technologies__content-image-l">
+                <img src="/images/native.svg" alt="logo" />
+              </div>
+
+              <div class="technologies__content-text-l">
+                <h3 class="technologies__content-title">React Native</h3>
+
+                <div
+                  id="react-native"
+                  class="technologies__content-description"
+                >
+                  React Native is a popular mobile app framework that allows you
+                  to build mobile apps for iOS and Android. The framework lets
+                  you create an application for various platforms by using the
+                  same codebase.
+                </div>
+              </div>
+            </div>
+            <!-- aws -->
+            <div class="technologies__content-block-r">
+              <div class="technologies__content-text">
+                <h3 class="technologies__content-title">AWS</h3>
+
+                <div id="aws" class="technologies__content-description">
+                  Amazon Web Services is a subsidiary of Amazon providing
+                  on-demand cloud computing platforms and APIs to individuals,
+                  companies, and governments, on a metered pay-as-you-go basis.
+                </div>
+              </div>
+
+              <div class="technologies__content-image-r">
+                <img src="/images/aws.svg" alt="logo" />
+              </div>
+            </div>
+            <!-- django -->
+            <div class="technologies__content-block-l">
+              <div class="technologies__content-image-l">
+                <img src="/images/django.svg" alt="logo" />
+              </div>
+
+              <div class="technologies__content-text-l">
+                <h3 class="technologies__content-title">Django</h3>
+
+                <div id="django" class="technologies__content-description">
+                  Django is a Python-based free and open-source web framework
+                  that follows the model–template–views architectural pattern.
+                  Django's primary goal is to ease the creation of complex,
+                  database-driven websites.
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="services__content-block">
-            <div class="services__content-block-image">
-              <img class="services__content-img" src="./images/support_service.svg" alt="block">
-            </div>
-
-            <div class="services__content-block-text">
-              <h3 id="support-title" class="services__content-block-title">
-                Support service
-              </h3>
-              <div class="services__content-block-list">
-                <ul class="services-list">
-                  <li id="support-l1" class="services-list-item">
-                    We want our partnership to last. To ensure the continuity of your business we will be there to help
-                    you
-                    with new ideas implementation & other post-development services
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-
-    <section class="profile" id="profile">
-      <div class="profile__container">
-        <div class="profile__container-head">
-          <h2 id="profile-title" class="profile__container-title">Profile</h2>
-          <p id="profile-title-back"  class="profile__container-back">Profile</p>
-          <p id="profile-desc"  class="profile__container__header-description">
-            What we do.
-          </p>
-        </div>
-
-        <div class="profile__container-list">
-          <ul class="profile__list">
-            <li id="profile-l1" class="profile__list-item">Architecture design, UX and development of modern web & mobile applications
-            </li>
-            <li id="profile-l2" class="profile__list-item">Full-stack end-to-end development with cutting-edge technologies</li>
-            <li id="profile-l3" class="profile__list-item">Frontend expertise in React & Redux</li>
-            <li id="profile-l4" class="profile__list-item">Backend expertise in Python apps on Django, Flask, AsyncIO, SQLAlchemy</li>
-            <li id="profile-l5" class="profile__list-item">Deployment and CI expertise in Docker, Nginx</li>
-            <li id="profile-l6" class="profile__list-item">Mobile & Desktop: React Native, Electron</li>
-            <li id="profile-l7" class="profile__list-item">Following TDD and E2E testing</li>
-            <li id="profile-l8" class="profile__list-item">
-              Agile methodology</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="technologies" id="technologies">
-      <div class="technologies__container">
-        <div class="technologies__header">
-          <h2 id="technologies-title" class="technologies__header-title">Featured technologies</h2>
-          <p id="technologies-title-back" class="technologies__header-back">Technologies</p>
-          <p id="technologies-desc" class="technologies__header-description">
-            Effective solutions built in a simple way
-          </p>
-        </div>
-
-        <div class="technologies__content">
-          <!-- flask -->
-          <div class="technologies__content-block-l">
-            <div class="technologies__content-image-l">
-              <img src="/images/flask.svg" alt="logo">
-            </div>
-
-            <div class="technologies__content-text-l">
-              <h3 class="technologies__content-title">
-                Flask
-              </h3>
-
-              <div id="flask" class="technologies__content-description">Flask is a web application framework. It is designed to
-                make getting started quick and easy, with the ability to scale up to complex applications & to keep the
-                core of the application simple.</div>
-            </div>
-          </div>
-          <!-- react -->
-          <div class="technologies__content-block-r">
-
-            <div class="technologies__content-text">
-              <h3 class="technologies__content-title">
-                React JS
-              </h3>
-
-              <div id="react" class="technologies__content-description">React JS is a library for building composable user
-                interfaces or UI components. It encourages the creation of reusable UI components, which present data
-                that changes over time.</div>
-            </div>
-
-            <div class="technologies__content-image-r">
-              <img src="/images/react.svg" alt="logo">
-            </div>
-
-          </div>
-          <!-- api -->
-          <div class="technologies__content-block-l">
-            <div class="technologies__content-image-l">
-              <img src="/images/fast_api.svg" alt="logo">
-            </div>
-
-            <div class="technologies__content-text-l">
-              <h3 class="technologies__content-title">
-                Fast Api
-              </h3>
-
-              <div id="api" class="technologies__content-description">Fast API is a modern, open-source, fast, and highly
-                performant Python web framework used for building Web APIs and is based on Python 3.6+ standard type
-                hints.</div>
-            </div>
-          </div>
-          <!-- type script -->
-          <div class="technologies__content-block-r">
-
-            <div class="technologies__content-text">
-              <h3 class="technologies__content-title">
-                Type Script
-              </h3>
-
-              <div id="type-script" class="technologies__content-description">TypeScript is a programming language developed and
-                maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static
-                typing to the language.</div>
-            </div>
-
-            <div class="technologies__content-image-r">
-              <img src="/images/type_script.svg" alt="logo">
-            </div>
-
-          </div>
-          <!-- react native -->
-          <div class="technologies__content-block-l">
-            <div class="technologies__content-image-l">
-              <img src="/images/native.svg" alt="logo">
-            </div>
-
-            <div class="technologies__content-text-l">
-              <h3 class="technologies__content-title">
-                React Native
-              </h3>
-
-              <div id="react-native" class="technologies__content-description">React Native is a popular mobile app framework that allows
-                you to build mobile apps for iOS and Android. The framework lets you create an application for various
-                platforms by using the same codebase.</div>
-            </div>
-          </div>
-          <!-- aws -->
-          <div class="technologies__content-block-r">
-
-            <div class="technologies__content-text">
-              <h3 class="technologies__content-title">
-                AWS
-              </h3>
-
-              <div id="aws" class="technologies__content-description">Amazon Web Services is a subsidiary of Amazon providing
-                on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered
-                pay-as-you-go basis.</div>
-            </div>
-
-            <div class="technologies__content-image-r">
-              <img src="/images/aws.svg" alt="logo">
-            </div>
-
-          </div>
-          <!-- django -->
-          <div class="technologies__content-block-l">
-            <div class="technologies__content-image-l">
-              <img src="/images/django.svg" alt="logo">
-            </div>
-
-            <div class="technologies__content-text-l">
-              <h3 class="technologies__content-title">
-                Django
-              </h3>
-
-              <div id="django" class="technologies__content-description">Django is a Python-based free and open-source web framework
-                that follows the model–template–views architectural pattern. Django's primary goal is to ease the
-                creation of complex, database-driven websites.</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <section class="portfolio" id="portfolio">
-      <div class="portfolio__container">
-        <div class="portfolio__header">
-          <h2 id="portfolio-title" class="portfolio__header-title">Portfolio</h2>
-          <p id="portfolio-title-back" class="portfolio__header-back">Portfolio</p>
-          <p id="portfolio-desc"  class="portfolio__header-description">
-            Some of our projects are below. You can see more information by clicking on a button.
-          </p>
-        </div>
-
-        <div class="portfolio__content">
-
-          <div class="portfolio__content-block">
-            <img class="portfolio__content-image" src="/images/waldup.png" alt="">
-            <h3 class="portfolio__content-title"><a href="https://www.waldup.com/">Waldup</a></h3>
-            <p id="waldup" class="portfolio__content-description">
-              This application helps you to prepare and plan your hiking and trail running activities. Smart waypoints
-              and race sheets. Customized timings.
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio__container">
+          <div class="portfolio__header">
+            <h2 id="portfolio-title" class="portfolio__header-title">
+              Portfolio
+            </h2>
+            <p id="portfolio-title-back" class="portfolio__header-back">
+              Portfolio
             </p>
-
-            <button class="portfolio__content-button"><a
-                href="https://www.upwork.com/ag/simple2b/portfolio/project/1404441363743989760" id="more1"
-                class="portfolio__content-link">More</a></button>
-          </div>
-
-
-
-          <div class="portfolio__content-block">
-            <img class="portfolio__content-image" src="/images/mockmate.png" alt="">
-            <h3 class="portfolio__content-title"><a href="https://mockmate-hiring.herokuapp.com/">Mockmate</a></h3>
-            <p id="mockmate" class="portfolio__content-description">
-              Application for HR experts and candidates that utilize AI & ML algorithms to automate hiring processes as
-              a part of the team
+            <p id="portfolio-desc" class="portfolio__header-description">
+              Some of our projects are below. You can see more information by
+              clicking on a button.
             </p>
-
-            <button class="portfolio__content-button"><a
-                href="https://www.upwork.com/ag/simple2b/portfolio/project/1404448258230788096" id="more2"
-                class="portfolio__content-link">More</a></button>
           </div>
 
-          <div class="portfolio__content-block">
-            <img class="portfolio__content-image" src="/images/Quotations.png" alt="">
-            <h3 class="portfolio__content-title"><a href="https://flora.simple2b.net/">Quotations management<br>
-                application</a></h3>
-            <p id="quotations" class="portfolio__content-description">
-              Enable users to prepare custom quotations for clients. Include 3rd party application integration user &
-              documents management. Documents can be converted to PDF and DOCX.
+          <div class="portfolio__content">
+            <div class="portfolio__content-block">
+              <img
+                class="portfolio__content-image"
+                src="/images/waldup.png"
+                alt=""
+              />
+              <h3 class="portfolio__content-title">
+                <a href="https://www.waldup.com/">Waldup</a>
+              </h3>
+              <p id="waldup" class="portfolio__content-description">
+                This application helps you to prepare and plan your hiking and
+                trail running activities. Smart waypoints and race sheets.
+                Customized timings.
+              </p>
+
+              <button class="portfolio__content-button">
+                <a
+                  href="https://www.upwork.com/ag/simple2b/portfolio/project/1404441363743989760"
+                  id="more1"
+                  class="portfolio__content-link"
+                  >More</a
+                >
+              </button>
+            </div>
+
+            <div class="portfolio__content-block">
+              <img
+                class="portfolio__content-image"
+                src="/images/mockmate.png"
+                alt=""
+              />
+              <h3 class="portfolio__content-title">
+                <a href="https://mockmate-hiring.herokuapp.com/">Mockmate</a>
+              </h3>
+              <p id="mockmate" class="portfolio__content-description">
+                Application for HR experts and candidates that utilize AI & ML
+                algorithms to automate hiring processes as a part of the team
+              </p>
+
+              <button class="portfolio__content-button">
+                <a
+                  href="https://www.upwork.com/ag/simple2b/portfolio/project/1404448258230788096"
+                  id="more2"
+                  class="portfolio__content-link"
+                  >More</a
+                >
+              </button>
+            </div>
+
+            <div class="portfolio__content-block">
+              <img
+                class="portfolio__content-image"
+                src="/images/Quotations.png"
+                alt=""
+              />
+              <h3 class="portfolio__content-title">
+                <a href="https://flora.simple2b.net/"
+                  >Quotations management<br />
+                  application</a
+                >
+              </h3>
+              <p id="quotations" class="portfolio__content-description">
+                Enable users to prepare custom quotations for clients. Include
+                3rd party application integration user & documents management.
+                Documents can be converted to PDF and DOCX.
+              </p>
+
+              <button class="portfolio__content-button">
+                <a
+                  href="https://www.upwork.com/ag/simple2b/portfolio/project/1404469732952547328"
+                  id="more3"
+                  class="portfolio__content-link"
+                  >More</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__container">
+          <div class="about__header">
+            <h2 id="about-title" class="about__header-title">About us</h2>
+            <p id="about-title-back" class="about__header-back">About us</p>
+            <p id="about-desc" class="about__header-description">
+              Let's meet our team.
             </p>
-
-            <button class="portfolio__content-button"><a
-                href="https://www.upwork.com/ag/simple2b/portfolio/project/1404469732952547328" id="more3"
-                class="portfolio__content-link">More</a></button>
-
           </div>
 
-        </div>
-      </div>
-    </section>
+          <div class="about__content">
+            <div class="about__content-gallery">
+              <img
+                class="about__content-gallery-photo"
+                src="/images/photo_65.png"
+                alt="photo"
+              />
+              <img
+                class="about__content-gallery-photo"
+                src="/images/photo_71.png"
+                alt="photo"
+              />
+              <img
+                class="about__content-gallery-photo"
+                src="/images/photo_77.png"
+                alt="photo"
+              />
+            </div>
 
-    <section class="about" id="about">
-      <div class="about__container">
-        <div class="about__header">
-          <h2 id="about-title" class="about__header-title">About us</h2>
-          <p id="about-title-back" class="about__header-back">About us</p>
-          <p id="about-desc" class="about__header-description">
-            Let's meet our team.
-          </p>
-        </div>
+            <div class="about__content-main">
+              <div class="slider">
+                <div class="slider__container">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <div class="about__content-head">
+                          <h3 class="about__content-head-name">
+                            Nikolay Chernov
+                          </h3>
+                          <p class="about__content-head-position">CTO</p>
+                        </div>
+                        <div class="about__content-main-block">
+                          <!-- <img src="/images/left.svg" class="about__content-main-arrow"/> -->
+                          <div id="bio1" class="about__content-main-bio">
+                            Senior Software Engineer and Technical Lead with
+                            more than 25 years experience. Object-Oriented
+                            Analysis and Design, Design Patterns, Best
+                            Programming Practices in C++ and C#, TDD (Test
+                            Driven Development), Qt, Cloud Application(Azure),
+                            Agile development with Scrum, client/server
+                            programming, TCP/IP and web protocols, Windows
+                            system programming, Multi-threading & IPC, Web
+                            Services, Git, SVN, TFS, Perforce, DDK\WIN PE build
+                            environment (NT Build), CMake. Last years focused on
+                            Web Application development on Python and TypeScript
+                            for implementing solution for small and middle
+                            businesses.
+                          </div>
 
-        <div class="about__content">
-          <div class="about__content-gallery">
-            <img class="about__content-gallery-photo" src="/images/photo_65.png" alt="photo">
-            <img class="about__content-gallery-photo" src="/images/photo_71.png" alt="photo">
-            <img class="about__content-gallery-photo" src="/images/photo_77.png" alt="photo">
-          </div>
+                          <img
+                            class="about__content-main-photo"
+                            src="/images/photo_7.png"
+                            alt=""
+                          />
 
-
-
-          <div class="about__content-main">
-            <div class="slider">
-              <div class="slider__container">
-                <div class="slider__wrapper">
-                  <div class="slider__items">
-                    <div class="slider__item">
-                      <div class="about__content-head">
-                        <h3 class="about__content-head-name">
-                          Nikolay Chernov
-                        </h3>
-                        <p class="about__content-head-position">
-                          CTO
-                        </p>
+                          <!-- <img src="/images/right.svg" alt=""> -->
+                        </div>
                       </div>
-                      <div class="about__content-main-block">
-                        <!-- <img src="/images/left.svg" class="about__content-main-arrow"/> -->
-                        <div id="bio1" class="about__content-main-bio">
-                          Senior Software Engineer and Technical Lead with more than 25 years experience.
-                          Object-Oriented Analysis and Design, Design Patterns, Best Programming Practices in C++ and C#,
-                          TDD (Test Driven Development), Qt, Cloud Application(Azure), Agile development with Scrum,
-                          client/server programming, TCP/IP and web protocols, Windows system programming, Multi-threading & IPC, Web Services,
-                          Git, SVN, TFS, Perforce,  DDK\WIN PE build environment (NT Build), CMake.
-                          Last years focused on Web Application development on Python and TypeScript for implementing solution for small and middle businesses.
+                      <div class="slider__item">
+                        <div class="about__content-head">
+                          <h3 class="about__content-head-name">Vasyl Khmura</h3>
+                          <p class="about__content-head-position">CEO</p>
                         </div>
+                        <div class="about__content-main-block">
+                          <div id="bio2" class="about__content-main-bio">
+                            Sales & Human Relations enthusiast. Entrepreneur &
+                            Strategist. Innovation developer. I have 17 years of
+                            working experience in IT, Telecommunications &
+                            Financial industries in top global companies in
+                            managerial positions. With all my experience, I'm
+                            helping businesses of different sizes & spheres to
+                            solve pain points, embrace strong sides, and
+                            discover opportunities to grow.
+                          </div>
 
-                        <img class="about__content-main-photo" src="/images/photo_7.png" alt="">
-
-                        <!-- <img src="/images/right.svg" alt=""> -->
+                          <img
+                            class="about__content-main-photo"
+                            src="/images/photo_13.png"
+                            alt=""
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <div class="slider__item">
-                      <div class="about__content-head">
-                        <h3 class="about__content-head-name">
-                          Vasyl Khmura
-                        </h3>
-                        <p class="about__content-head-position">
-                          CEO
-                        </p>
-                      </div>
-                      <div class="about__content-main-block">
+                      <div class="slider__item">
+                        <div class="about__content-team">
+                          <div class="about__content-team-block">
+                            <img
+                              class="team__image"
+                              src="/images/photo_31.png"
+                              alt=""
+                            />
+                            <div class="about__content-team-text">
+                              <h4 class="team-name">Taras Lysak</h4>
+                              <p class="team-position">Software Engineer</p>
+                            </div>
+                          </div>
 
-                        <div id="bio2" class="about__content-main-bio">
-                          Sales & Human Relations enthusiast. Entrepreneur & Strategist. Innovation developer.
-                          I have 17 years of working experience in IT, Telecommunications & Financial industries in top global companies in managerial positions.
-                          With all my experience, I'm helping businesses of different sizes & spheres to solve pain points,
-                          embrace strong sides, and discover opportunities to grow.
-                        </div>
+                          <div class="about__content-team-block">
+                            <div class="about__content-team-text">
+                              <h4 class="team-name">Bogdana Romanyuk</h4>
+                              <p class="team-position">Software Engineer</p>
+                            </div>
+                            <img
+                              class="team__image"
+                              src="/images/photo_27.png"
+                              alt=""
+                            />
+                          </div>
 
-                        <img class="about__content-main-photo" src="/images/photo_13.png" alt="">
+                          <div class="about__content-team-block">
+                            <img
+                              class="team__image"
+                              src="/images/photo_42.png"
+                              alt=""
+                            />
+                            <div class="about__content-team-text">
+                              <h4 class="team-name">Gleb Shevchenko</h4>
+                              <p class="team-position">Software Engineer</p>
+                            </div>
+                          </div>
 
-
-                      </div>
-                    </div>
-                    <div class="slider__item">
-
-                      <div class="about__content-team">
-
-                        <div class="about__content-team-block">
-                          <img class="team__image" src="/images/photo_31.png" alt="">
-                          <div class="about__content-team-text">
-                            <h4 class="team-name">Taras Lysak</h4>
-                            <p class="team-position">Software Engineer</p>
+                          <div class="about__content-team-block">
+                            <div class="about__content-team-text">
+                              <h4 class="team-name">Varvara Shcherbyna</h4>
+                              <p class="team-position">
+                                Junior Software Engineer
+                              </p>
+                            </div>
+                            <img
+                              class="team__image"
+                              src="/images/photo_24.png"
+                              alt=""
+                            />
                           </div>
                         </div>
-
-                        <div class="about__content-team-block">
-                          <div class="about__content-team-text">
-                            <h4 class="team-name">Bogdana Romanyuk</h4>
-                            <p class="team-position">Software Engineer</p>
-                          </div>
-                          <img class="team__image" src="/images/photo_27.png" alt="">
-                        </div>
-
-                        <div class="about__content-team-block">
-                          <img class="team__image" src="/images/photo_42.png" alt="">
-                          <div class="about__content-team-text">
-                            <h4 class="team-name">Gleb Shevchenko</h4>
-                            <p class="team-position">Software Engineer</p>
-                          </div>
-                        </div>
-
-                        <div class="about__content-team-block">
-                          <div class="about__content-team-text">
-                            <h4 class="team-name">Varvara Shcherbyna</h4>
-                            <p class="team-position">Junior Software Engineer</p>
-                          </div>
-                          <img class="team__image" src="/images/photo_24.png" alt="">
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                    <div class="slider__item">
-
-                      <div class="about__content-team">
-
-
-                        <div class="about__content-team-block">
-                          <img class="team__image" src="/images/photo_40.png" alt="">
-                          <div class="about__content-team-text">
-                            <h4 class="team-name">Alik (Oleh) Shkurkin</h4>
-                            <p class="team-position">Junior Software Engineer</p>
-                          </div>
-                        </div>
-
-                        <div class="about__content-team-block">
-                          <div class="about__content-team-text">
-                            <h4 class="team-name">Dmitriy Matviichuk</h4>
-                            <p class="team-position">Junior Software Engineer</p>
-                          </div>
-                          <img class="team__image" src="/images/photo_4.png" alt="">
-                        </div>
-
-                        <div class="about__content-team-block">
-                          <img class="team__image" src="/images/photo_17.png" alt="">
-                          <div class="about__content-team-text">
-                            <h4 class="team-name">Yuliya Matyushenko</h4>
-                            <p class="team-position">Junior Software Engineer</p>
-                          </div>
-                        </div>
-
-
                       </div>
 
+                      <div class="slider__item">
+                        <div class="about__content-team">
+                          <div class="about__content-team-block">
+                            <img
+                              class="team__image"
+                              src="/images/photo_40.png"
+                              alt=""
+                            />
+                            <div class="about__content-team-text">
+                              <h4 class="team-name">Alik (Oleh) Shkurkin</h4>
+                              <p class="team-position">
+                                Junior Software Engineer
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="about__content-team-block">
+                            <div class="about__content-team-text">
+                              <h4 class="team-name">Dmitriy Matviichuk</h4>
+                              <p class="team-position">
+                                Junior Software Engineer
+                              </p>
+                            </div>
+                            <img
+                              class="team__image"
+                              src="/images/photo_4.png"
+                              alt=""
+                            />
+                          </div>
+
+                          <div class="about__content-team-block">
+                            <img
+                              class="team__image"
+                              src="/images/photo_17.png"
+                              alt=""
+                            />
+                            <div class="about__content-team-text">
+                              <h4 class="team-name">Yuliya Matyushenko</h4>
+                              <p class="team-position">
+                                Junior Software Engineer
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="about__content-team-block">
+                            <div class="about__content-team-text">
+                              <h4 class="team-name">Andrii Yurha</h4>
+                              <p class="team-position">
+                                Junior Software Engineer
+                              </p>
+                            </div>
+                            <img
+                              class="team__image"
+                              src="/images/photo_118.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <img
+                  src="/images/left-yellow-arrow.svg"
+                  class="slider__control about__content-main-arrow"
+                  data-slide="prev"
+                />
+
+                <img
+                  class="slider__control"
+                  data-slide="next"
+                  src="/images/right-yellow-arrow.svg"
+                  alt=""
+                />
               </div>
-              <img src="/images/left-yellow-arrow.svg" class=" slider__control about__content-main-arrow"
-                data-slide="prev" />
-
-              <img class="slider__control" data-slide="next" src="/images/right-yellow-arrow.svg" alt="">
-
             </div>
-
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- <section class="join">
+      <!-- <section class="join">
       <div class="join__container">
         <div class="join__header">
           <h2 id="join-title" class="join__header-title">Join us</h2>
@@ -599,7 +804,7 @@
           <div id="join-text" class="join__content-text">
             Where can I get some?<br>
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-            some form, by injected humour, or randomised words which don't look even slightly believable. If you are
+            some form, by injected humour, or randomized words which don't look even slightly believable. If you are
             going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
             middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
             necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
@@ -616,135 +821,176 @@
       </div>
     </section> -->
 
-    <section class="contact" id="contact">
-      <div class="contact__container">
-        <div class="contact__header">
-          <h2 id="contact-title" class="contact__header-title">Contact us</h2>
-          <p id="contact-title-back" class="contact__header-back">Contact us</p>
-          <p id="contact-desc"  class="contact__header-description">
-            Feel free to contact us if you have any questions.
-          </p>
-        </div>
-
-        <div class="contact__form-block">
-          <form id="contactForm" name="sentMessage" novalidate class="contact__form needs-validation">
-            <div class="contact__form-left">
-              <div class="form__names">
-                <div>
-                  <input type="text" id="name" placeholder="Your Name *" class="form__name form-control"
-                    data-validation-required-message="Please enter your name." required>
-                  <div class="invalid-feedback">
-                    Please enter your name.
-                  </div>
-                  <p class="help-block text-danger"></p>
-                </div>
-
-                <div>
-                  <input type="email" id="email" placeholder="Your Email *" class="form__email form-control"
-                    data-validation-required-message="Please enter your email address." required>
-                  <div class="invalid-feedback">
-                    Please enter your email address.
-                  </div>
-                  <p class="help-block text-danger"></p>
-                </div>
-
-              </div>
-
-              <div class="form__buttons">
-                <label for="chosenFile" class="button__attach"><img src="/images/attachment-line.svg">Attachment</label>
-                <input id="chosenFile" name="chosenFile" type="file" class="attach">
-
-
-                <button type="submit" id="sendMessageButton" class="contact__button">Send message</button>
-              </div>
-            </div>
-
-            <div class="contact__form-right">
-              <textarea id="message" placeholder="Your Text *" class="form__text form-control"
-                data-validation-required-message="Please enter a message." required></textarea>
-              <p class="invalid-feedback">
-                Please enter a message.
-              </p>
-              <p class="help-block text-danger"></p>
-            </div>
-
-          </form>
-        </div>
-
-
-
-        <div class="container-fluid" style="max-width: 500px;">
-          <div id="success"></div>
-        </div>
-
-        <div class="container-fluid" style="max-width: 500px;" id="my_alert">
-          <div class="alert alert-info" style="width: 100%;" role="alert">
-            <p class="text-center">
-              <i id="file" class="fa fa-exclamation-triangle" aria-hidden="true"></i>You need to select a smaller
-              file...
+      <section class="contact" id="contact">
+        <div class="contact__container">
+          <div class="contact__header">
+            <h2 id="contact-title" class="contact__header-title">Contact us</h2>
+            <p id="contact-title-back" class="contact__header-back">
+              Contact us
+            </p>
+            <p id="contact-desc" class="contact__header-description">
+              Feel free to contact us if you have any questions.
             </p>
           </div>
 
+          <div class="contact__form-block">
+            <form
+              id="contactForm"
+              name="sentMessage"
+              novalidate
+              class="contact__form needs-validation"
+            >
+              <div class="contact__form-left">
+                <div class="form__names">
+                  <div>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Your Name *"
+                      class="form__name form-control"
+                      data-validation-required-message="Please enter your name."
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter your name.</div>
+                    <p class="help-block text-danger"></p>
+                  </div>
 
+                  <div>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Your Email *"
+                      class="form__email form-control"
+                      data-validation-required-message="Please enter your email address."
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your email address.
+                    </div>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+
+                <div class="form__buttons">
+                  <label for="chosenFile" class="button__attach"
+                    ><img src="/images/attachment-line.svg" />Attachment</label
+                  >
+                  <input
+                    id="chosenFile"
+                    name="chosenFile"
+                    type="file"
+                    class="attach"
+                  />
+
+                  <button
+                    type="submit"
+                    id="sendMessageButton"
+                    class="contact__button"
+                  >
+                    Send message
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact__form-right">
+                <textarea
+                  id="message"
+                  placeholder="Your Text *"
+                  class="form__text form-control"
+                  data-validation-required-message="Please enter a message."
+                  required
+                ></textarea>
+                <p class="invalid-feedback">Please enter a message.</p>
+                <p class="help-block text-danger"></p>
+              </div>
+            </form>
+          </div>
+
+          <div class="container-fluid" style="max-width: 500px">
+            <div id="success"></div>
+          </div>
+
+          <div class="container-fluid" style="max-width: 500px" id="my_alert">
+            <div class="alert alert-info" style="width: 100%" role="alert">
+              <p class="text-center">
+                <i
+                  id="file"
+                  class="fa fa-exclamation-triangle"
+                  aria-hidden="true"
+                ></i
+                >You need to select a smaller file...
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__social">
-      <a href="https://github.com/simple2b"><img src="/images/git.svg" class="git"></a>
-      <a href="https://www.facebook.com/Simple2B-109300384066487"><img src="/images/fb.svg" class="fb"></a>
-      <a href="https://www.linkedin.com/company/simple2b"><img src="/images/linkedin.svg" class="in"></a>
-    </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__social">
+        <a href="https://github.com/simple2b"
+          ><img src="/images/git.svg" class="git"
+        /></a>
+        <a href="https://www.facebook.com/Simple2B-109300384066487"
+          ><img src="/images/fb.svg" class="fb"
+        /></a>
+        <a href="https://www.linkedin.com/company/simple2b"
+          ><img src="/images/linkedin.svg" class="in"
+        /></a>
+      </div>
 
-    <div class="footer__links">
-      <a id="policy" class="footer__link" href="/policy-eng.html">Privacy Policy</a>
-      <a id="terms" class="footer__link" href="/terms-eng.html">Terms of Use</a>
-    </div>
-  </footer>
+      <div class="footer__links">
+        <a id="policy" class="footer__link" href="/policy-eng.html"
+          >Privacy Policy</a
+        >
+        <a id="terms" class="footer__link" href="/terms-eng.html"
+          >Terms of Use</a
+        >
+      </div>
+    </footer>
 
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      'use strict'
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
 
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.querySelectorAll('.needs-validation')
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation');
 
-      // Loop over them and prevent submission
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            'submit',
+            function (event) {
+              if (!form.checkValidity()) {
+                console.log(form);
+                event.preventDefault();
+                event.stopPropagation();
+              }
 
-              console.log(form);
-              event.preventDefault()
-              event.stopPropagation()
+              form.classList.add('was-validated');
+            },
+            false
+          );
+        });
+      })();
+    </script>
 
-            }
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            form.classList.add('was-validated')
-          }, false)
-        })
-    })()
-  </script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Contact form JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- or use local jquery -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Language switch scripts for this template -->
+    <script src="js/languages-new.js" defer=""></script>
 
-  <!-- Contact form JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-<!-- Language switch scripts for this template -->
-  <script src="js/languages-new.js" defer=""></script>
-
-  <script type="text/javascript" src="js/main.js"></script>
-
-</body>
-
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
