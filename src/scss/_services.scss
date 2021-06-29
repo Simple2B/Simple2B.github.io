@@ -114,3 +114,10 @@
     justify-content: space-around;
   }
 }
+
+@media (max-width: 610px) {
+  .services__header-description {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -104,9 +104,21 @@
 }
 }
 
+@media (max-width: 610px) {
+  .portfolio__header-description {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media (max-width:500px) {
   .portfolio__content-image {
     width: 270px;
+  }
 
+  .portfolio__content-description {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0;
   }
 }

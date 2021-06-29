@@ -128,12 +128,14 @@
   .technologies__content-text-l {
     max-width: 435px;
     padding: 30px;
+    padding-top: 93px;
   }
 
   .technologies__content-text {
     max-width: 435px;
     min-width: 300px;
     padding: 30px;
+    padding-top: 93px;
   }
 
   .technologies__content-block-r {
@@ -148,6 +150,11 @@
 
   .technologies__content-image-r {
     margin: 0;
+    margin-bottom: -111px;
+  }
+
+  .technologies__content-image-l {
+    margin-bottom: -111px;
   }
 }
 

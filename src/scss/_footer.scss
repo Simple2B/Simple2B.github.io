@@ -15,7 +15,8 @@
 
 .git,
 .fb,
-.in {
+.in,
+.youtube {
   padding-right: 10px;
   transition: transform 2ms;
   cursor: pointer;
@@ -23,7 +24,8 @@
 
 .git:hover,
 .fb:hover,
-.in:hover {
+.in:hover,
+.youtube:hover {
   transform: scale(1.1);
 }
 

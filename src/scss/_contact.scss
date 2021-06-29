@@ -162,6 +162,13 @@
 
 }
 
+@media (max-width: 610px) {
+  .contact__header-description {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media (max-width: 390px) {
   .contact__form-right,
   .contact__form-left {
