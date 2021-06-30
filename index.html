@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple2B Agency</title>
+    <base target="_blank">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -388,7 +389,7 @@
               </div>
 
               <div class="technologies__content-text-l">
-                <h3 class="technologies__content-title">Fast Api</h3>
+                <h3 class="technologies__content-title">FastAPI</h3>
 
                 <div id="api" class="technologies__content-description">
                   Fast API is a modern, open-source, fast, and highly performance Python web framework used for building Web APIs and is based on Python 3.6+ standard type hints.
@@ -483,8 +484,23 @@
             </p>
           </div>
 
+
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('flask')">Flask</button>
+            <button class="btn" onclick="filterSelection('react')"> React</button>
+            <button class="btn" onclick="filterSelection('sql')">SQL</button>
+            <button class="btn" onclick="filterSelection('python')"> Python</button>
+            <button class="btn" onclick="filterSelection('docker')"> Docker</button>
+            <button class="btn" onclick="filterSelection('api')">API</button>
+            <button class="btn" onclick="filterSelection('js')">JavaScript</button>
+            <button class="btn" onclick="filterSelection('html')">HTML/CSS</button>
+            <button class="btn" onclick="filterSelection('jquery')">jQuery</button>
+          </div>
+
           <div class="portfolio__content">
-            <div class="portfolio__content-block">
+
+            <div class="portfolio__content-block js flask react sql python docker">
               <img
                 class="portfolio__content-image"
                 src="/images/waldup.png"
@@ -499,17 +515,46 @@
                 Customized timings.
               </p>
 
-              <button class="portfolio__content-button">
-                <a
-                  href="https://www.upwork.com/ag/simple2b/portfolio/project/1404441363743989760"
-                  id="more1"
-                  class="portfolio__content-link"
-                  >More</a
-                >
-              </button>
+              <!-- Button trigger modal -->
+            <button type="button" class="portfolio__content-button" data-toggle="modal" data-target=".bd-example-modal-lg1">
+              More
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade bd-example-modal-lg1" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Waldup. Hiking & Trail running application for enthusiasts</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="develop"><strong>Web Development</strong></div>
+                    <div class="stack">JavaScript, Flask, React, Stripe, PostgreSQL, Python, XML, Leaflet, PDF, Docker, NGINX, Bootstrap</div>
+                    <div class="project_desc">This application helps you to prepare and plan your hiking and trail running activities. Smart waypoints and race sheets. Customized timings. Includes features like creating, managing, viewing, and sharing GPS/map data, Stripe payment, Social Networks & Industry-specific 3rd party API integrations.</div>
+                    <a class="project_link" href="https://www.waldup.com/">https://www.waldup.com/</a>
+
+                    <div class="project_images">
+                      <img src="./images/waldup1" class="prj-img">
+                      <img src="./images/waldup2.jpeg" class="prj-img">
+                      <img src="./images/waldup2.jpeg" class="prj-img">
+                      <img src="./images/waldup4.jpeg" class="prj-img">
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
             </div>
 
-            <div class="portfolio__content-block">
+
+
+
+
+            <div class="portfolio__content-block docker jquery flask python">
               <img
                 class="portfolio__content-image"
                 src="/images/mockmate.png"
@@ -523,17 +568,43 @@
                 algorithms to automate hiring processes as a part of the team
               </p>
 
-              <button class="portfolio__content-button">
-                <a
-                  href="https://www.upwork.com/ag/simple2b/portfolio/project/1404448258230788096"
-                  id="more2"
-                  class="portfolio__content-link"
-                  >More</a
-                >
-              </button>
+              <!-- Button trigger modal -->
+            <button type="button" class="portfolio__content-button" data-toggle="modal" data-target=".bd-example-modal-lg2">
+              More
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade bd-example-modal-lg2" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle1">Mockmate. Recruiting Simulator.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="develop"><strong>Web Development</strong></div>
+                    <div class="stack">Code Refactoring, Bootstrap, Docker, Heroku, jQuery, Flask, Python</div>
+                    <div class="project_desc">Application for HR experts and candidates that utilize AI & ML algorithms to automate hiring processes as a part of the team
+                    </div>
+                    <a class="project_link" href="https://mockmate-hiring.herokuapp.com/">https://mockmate-hiring.herokuapp.com/</a>
+
+                    <div class="project_images">
+                      <img src="./images/mockmate1" class="prj-img">
+                      <img src="./images/mockmate2.JPG" class="prj-img">
+                      <img src="./images/mockmate3.JPG" class="prj-img">
+                      <img src="./images/mockmate4.JPG" class="prj-img">
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
             </div>
 
-            <div class="portfolio__content-block">
+            <div class="portfolio__content-block docker api js html flask python">
               <img
                 class="portfolio__content-image"
                 src="/images/Quotations.png"
@@ -551,14 +622,39 @@
                 Documents can be converted to PDF and DOCX.
               </p>
 
-              <button class="portfolio__content-button">
-                <a
-                  href="https://www.upwork.com/ag/simple2b/portfolio/project/1404469732952547328"
-                  id="more3"
-                  class="portfolio__content-link"
-                  >More</a
-                >
-              </button>
+              <!-- Button trigger modal -->
+            <button type="button" class="portfolio__content-button" data-toggle="modal" data-target=".bd-example-modal-lg3">
+              More
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade bd-example-modal-lg3" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Quotations management applications</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="develop"><strong>Web Development</strong></div>
+                    <div class="stack">NGINX, Docker, Bootstrap, API, CSS, HTML, JavaScript, Flask, Python</div>
+                    <div class="project_desc">Enable users to prepare custom quotations for clients. Include 3rd party application integration user & documents management. Documents can be converted to PDF and DOCX.</div>
+
+                    <div class="project_images">
+                      <img src="./images/quotations1" class="prj-img">
+                      <img src="./images/quotations2.png" class="prj-img">
+                      <img src="./images/quotations3.jpeg" class="prj-img">
+                      <img src="./images/quotations4.jpeg" class="prj-img">
+                      <img src="./images/quotations5.png" class="prj-img">
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -998,6 +1094,8 @@
     <script src="js/languages-new.js"></script>
 
     <script type="text/javascript" src="js/upbutton.js"></script>
+
+    <script type="text/javascript" src="js/filter_portfolio.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
   </body>

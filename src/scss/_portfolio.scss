@@ -8,6 +8,7 @@
 
 .portfolio__content-block {
   max-width: 435px;
+  display: none; /* Hidden by default */
 }
 
 .portfolio__content-title {
@@ -40,6 +41,7 @@
   justify-content: center;
   margin: 0 auto;
   display: flex;
+  color: $c-white;
 }
 
 .portfolio__content-link {
@@ -89,6 +91,67 @@
   border: 1px solid rgba(128, 128, 128, 0.178)
 }
 
+.modal-body {
+  margin: 35px;
+}
+
+.develop {
+  padding-bottom: 20px;
+}
+
+.stack {
+  padding-bottom: 20px;
+  color: gray;
+}
+
+.project_desc {
+  padding-bottom: 20px;
+}
+
+.project_link {
+  color: rgb(0, 110, 255);
+  margin-bottom: 20px;
+}
+
+.prj-img {
+  width: 700px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.109);
+  border-radius: 3px;
+}
+
+#myBtnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  background-color: #EDF2E9;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #afc59e62;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #A4BC90;
+}
+
 @media (max-width: 1060px) {
 .portfolio__content {
   display: flex;
@@ -104,6 +167,12 @@
 }
 }
 
+@media (max-width: 991px) {
+  .prj-img {
+    width: 400px;
+  }
+}
+
 @media (max-width: 610px) {
   .portfolio__header-description {
     padding-left: 15px;
@@ -112,6 +181,14 @@
 }
 
 @media (max-width:500px) {
+  .modal-body {
+    margin: 20px;
+  }
+
+  .prj-img {
+    width: 320px;
+  }
+
   .portfolio__content-image {
     width: 270px;
   }
@@ -120,5 +197,15 @@
     margin-left: 15px;
     margin-right: 15px;
     padding: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .modal-body {
+    margin: 10px;
+  }
+
+  .prj-img {
+    width: 250px;
   }
 }

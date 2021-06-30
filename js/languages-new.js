@@ -22,7 +22,7 @@ function engLang() {
 
     document.getElementById("services-title").textContent = "Services"
     document.getElementById("services-title-back").textContent = "Services"
-    document.getElementById("services-title-desc").textContent = "We are the Team of enthusiasts of Web Application Development. Not only we love to deliver high-quality solutions for B2B, B2C, and Startups, we aim to ensure mutual success with our customers."
+    document.getElementById("services-title-desc").textContent = "Your professional partner on a path from an idea to the application and beyond."
     document.getElementById("architecture-title").textContent = "Solution architecture"
     document.getElementById("architecture-l1").textContent = "Project estimation to evaluate the duration of the project from initiation to the commercial launch"
     document.getElementById("architecture-l2").textContent = "We will create an architecture of your new web application or transform the architecture of your existing one to meet the latest needs & requirements of your business"
@@ -51,7 +51,7 @@ function engLang() {
 
     document.getElementById("flask").textContent = "Flask is a web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications & to keep the core of the application simple."
     document.getElementById("react").textContent = "React JS is a library for building composable user interfaces or UI components. It encourages the creation of reusable UI components, which present data that changes over time."
-    document.getElementById("api").textContent = "Fast API is a modern, open-source, fast, and highly performant Python web framework used for building Web APIs and is based on Python 3.6+ standard type hints."
+    document.getElementById("api").textContent = "FastAPI is a modern, open-source, fast, and highly performant Python web framework used for building Web APIs and is based on Python 3.6+ standard type hints."
     document.getElementById("type-script").textContent = "TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language."
     document.getElementById("react-native").textContent = "React Native is a popular mobile app framework that allows you to build mobile apps for iOS and Android. The framework lets you create an application for various platforms by using the same codebase."
     document.getElementById("aws").textContent = "Amazon Web Services is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis."
@@ -70,7 +70,7 @@ function engLang() {
 
     document.getElementById("about-title").textContent = "About us"
     document.getElementById("about-title-back").textContent = "About us"
-    document.getElementById("about-desc").textContent = "Let's meet our team."
+    document.getElementById("about-desc").textContent = "Please meet the team."
 
     document.getElementById("bio1").textContent = "Senior Software Engineer and Technical Lead with more than 25 years experience. Object-Oriented Analysis and Design, Design Patterns, Best Programming Practices in C++ and C#, TDD (Test Driven Development), Qt, Cloud Application(Azure), Agile development with Scrum, client/server programming, TCP/IP and web protocols, Windows system programming, Multi-threading & IPC, Web Services, Git, SVN, TFS, Perforce, DDK/WIN PE build environment (NT Build), CMake. Last years focused on Web Application development on Python and TypeScript for implementing solution for small and middle businesses."
     document.getElementById("bio2").textContent = "Sales & Human Relations enthusiast. Entrepreneur & Strategist. Innovation developer. I have 17 years of working experience in IT, Telecommunications & Financial industries in top global companies in managerial positions. With all my experience, I'm helping businesses of different sizes & spheres to solve pain points, embrace strong sides, and discover opportunities to grow."
@@ -120,7 +120,7 @@ function dutchLang() {
 
     document.getElementById("services-title").textContent = "Diensten"
     document.getElementById("services-title-back").textContent = "Diensten"
-    document.getElementById("services-title-desc").textContent = "Wij zijn het team van enthousiastelingen van Web Application Development. We houden niet alleen van het leveren van hoogwaardige oplossingen voor B2B, B2C en startups, we streven ernaar om wederzijds succes met onze klanten te verzekeren."
+    document.getElementById("services-title-desc").textContent = "Uw professionele partner op weg van idee naar toepassing en verder."
 
     document.getElementById("architecture-title").textContent = "Oplossingsarchitectuur"
     document.getElementById("architecture-l1").textContent = "Projectschatting om de duur van het project van initiatie tot commerciële lancering te evalueren"
@@ -151,7 +151,7 @@ function dutchLang() {
 
     document.getElementById("flask").textContent = "Flask is een framework voor webtoepassingen. Het is ontworpen om snel en gemakkelijk aan de slag te gaan, met de mogelijkheid om op te schalen naar complexe applicaties en om de kern van de applicatie eenvoudig te houden."
     document.getElementById("react").textContent = "React JS is een bibliotheek voor het bouwen van samenstelbare gebruikersinterfaces of UI-componenten. Het stimuleert het maken van herbruikbare UI-componenten, die gegevens presenteren die in de loop van de tijd veranderen."
-    document.getElementById("api").textContent = "Fast API is een modern, open-source, snel en zeer performant Python-webframework dat wordt gebruikt voor het bouwen van web-API's en is gebaseerd op hints van het standaardtype Python 3.6+."
+    document.getElementById("api").textContent = "FastAPI is een modern, open-source, snel en zeer performant Python-webframework dat wordt gebruikt voor het bouwen van web-API's en is gebaseerd op hints van het standaardtype Python 3.6+."
     document.getElementById("type-script").textContent = "TypeScript is een programmeertaal ontwikkeld en onderhouden door Microsoft. Het is een strikte syntactische superset van JavaScript en voegt optioneel statisch typen toe aan de taal."
     document.getElementById("react-native").textContent = "React Native is een populair framework voor mobiele apps waarmee je mobiele apps voor iOS en Android kunt bouwen. Met het framework kun je een applicatie maken voor verschillende platforms door dezelfde codebase te gebruiken."
     document.getElementById("aws").textContent = "Amazon Web Services is een dochteronderneming van Amazon die on-demand cloudcomputingplatforms en API's levert aan particulieren, bedrijven en overheden, op basis van betaald gebruik."
@@ -170,7 +170,7 @@ function dutchLang() {
 
     document.getElementById("about-title").textContent = "Over ons"
     document.getElementById("about-title-back").textContent = "Over ons"
-    document.getElementById("about-desc").textContent = "Laten we kennismaken met ons team."
+    document.getElementById("about-desc").textContent = "Maak kennis met het team."
 
     document.getElementById("bio1").textContent = "Senior Software Engineer en Technical Lead met meer dan 25 jaar ervaring. Objectgeoriënteerde analyse en ontwerp, ontwerppatronen, beste programmeerpraktijken in C++ en C#, TDD (Test Driven Development), Qt, Cloud Application (Azure), Agile-ontwikkeling met Scrum, client/server-programmering, TCP/IP en webprotocollen, Windows-systeemprogrammering, Multi-threading & IPC, Web Services, Git, SVN, TFS, Perforce, DDK/WIN PE-bouwomgeving (NT Build), CMake. De afgelopen jaren lag de focus op de ontwikkeling van webapplicaties op Python en TypeScript voor het implementeren van oplossingen voor het midden- en kleinbedrijf."
     document.getElementById("bio2").textContent = "Sales & Human Relations liefhebber. Ondernemer & Strateeg. Innovatie ontwikkelaar. Ik heb 17 jaar werkervaring in de IT-, telecommunicatie- en financiële sector bij internationale topbedrijven in leidinggevende functies. Met al mijn ervaring help ik bedrijven van verschillende groottes en sferen om pijnpunten op te lossen, sterke kanten te omarmen en kansen te ontdekken om te groeien."

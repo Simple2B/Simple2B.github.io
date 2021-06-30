@@ -1,9 +1,11 @@
 .technologies__content {
   margin-top: 70px;
-  display: grid;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  column-gap: 70px;
 }
 
 .technologies__content-block-l {
@@ -66,6 +68,7 @@
 
 .technologies__content-text-l {
   max-width: 435px;
+  min-width: 435px;
   height: 305px;
   background: $c-light-green-opac;
   border: $c-border;
