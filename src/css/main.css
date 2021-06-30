@@ -41,6 +41,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .header__nav_item {
@@ -168,6 +169,9 @@
   }
   .burger__nav_link {
     color: white;
+  }
+  .burger__nav_link:hover {
+    color: #929191;
   }
   .burger {
     display: none;
