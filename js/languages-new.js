@@ -43,7 +43,8 @@ function engLang() {
     document.getElementById("profile-l5").textContent = "Deployment and CI expertise in Docker, Nginx"
     document.getElementById("profile-l6").textContent = "Mobile & Desktop: React Native, Electron"
     document.getElementById("profile-l7").textContent = "Following TDD and E2E testing"
-    document.getElementById("profile-l8").textContent = "Agile methodology"
+    document.getElementById("profile-l8").textContent = "FastAPI"
+    document.getElementById("profile-l9").textContent = "Agile methodology"
 
     document.getElementById("technologies-title").textContent = "Featured technologies"
     document.getElementById("technologies-title-back").textContent = "Technologies"
@@ -91,7 +92,7 @@ function engLang() {
 
     document.getElementById("contact-title").textContent = "Contact us"
     document.getElementById("contact-title-back").textContent = "Contact us"
-    document.getElementById("contact-desc").textContent = "Feel free to contact us if you have any questions."
+    document.getElementById("contact-desc").textContent = "We want to hear from you!"
 
     document.getElementById("name").placeholder = "Your Name *"
     document.getElementById("email").placeholder = "Your Email *"
@@ -151,7 +152,8 @@ function dutchLang() {
     document.getElementById("profile-l5").textContent = "Implementatie en CI-expertise in Docker, Nginx"
     document.getElementById("profile-l6").textContent = "Mobiel & Desktop: React Native, Electron"
     document.getElementById("profile-l7").textContent = "TDD- en E2E-testen"
-    document.getElementById("profile-l8").textContent = "Agile methodologie"
+    document.getElementById("profile-l8").textContent = "FastAPI"
+    document.getElementById("profile-l9").textContent = "Agile methodologie"
 
     document.getElementById("technologies-title").textContent = "Uitgelichte technologieën"
     document.getElementById("technologies-title-back").textContent = "Technologieën"
@@ -198,7 +200,7 @@ function dutchLang() {
 
     document.getElementById("contact-title").textContent = "Neem contact op"
     document.getElementById("contact-title-back").textContent = "Contact"
-    document.getElementById("contact-desc").textContent = "Neem gerust contact met ons op als u vragen heeft."
+    document.getElementById("contact-desc").textContent = "We willen van je horen!"
 
     document.getElementById("name").placeholder = "Uw naam *"
     document.getElementById("email").placeholder = "Jouw email *"

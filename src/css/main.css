@@ -136,7 +136,7 @@
   background-color: transparent;
   font-family: "Gentium Basic", serif;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #DDD12D;
 }
 
 .burger,
@@ -639,6 +639,7 @@
   width: 432px;
   border-radius: 3px;
   border: 1px solid rgba(128, 128, 128, 0.178);
+  cursor: pointer;
 }
 
 .modal-body {

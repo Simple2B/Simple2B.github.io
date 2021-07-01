@@ -201,7 +201,7 @@ ChiefSlider.prototype._addEventListener = function() {
   }
 
   $root.addEventListener('click', onClick.bind(this));
-  $root.addEventListener('mouseenter', onMouseEnter.bind(this));
+  $root.addEventListener('click', onMouseEnter.bind(this));
   $root.addEventListener('mouseleave', onMouseLeave.bind(this));
   // on resize
   if (config.refresh) {
@@ -523,6 +523,8 @@ ChiefSlider.prototype.refresh = function() {
 
 document.addEventListener('DOMContentLoaded', function () {
   const slider = new ChiefSlider('.slider', {
-    loop: false
+    loop: true,
+    autoplay: true,
+    interval: 4000,
   });
 });
