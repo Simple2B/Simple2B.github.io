@@ -43,7 +43,6 @@ function engLang() {
     document.getElementById("profile-l5").textContent = "Deployment and CI expertise in Docker, Nginx"
     document.getElementById("profile-l6").textContent = "Mobile & Desktop: React Native, Electron"
     document.getElementById("profile-l7").textContent = "Following TDD and E2E testing"
-    document.getElementById("profile-l8").textContent = "FastAPI"
     document.getElementById("profile-l9").textContent = "Agile methodology"
 
     document.getElementById("technologies-title").textContent = "Featured technologies"
@@ -152,7 +151,6 @@ function dutchLang() {
     document.getElementById("profile-l5").textContent = "Implementatie en CI-expertise in Docker, Nginx"
     document.getElementById("profile-l6").textContent = "Mobiel & Desktop: React Native, Electron"
     document.getElementById("profile-l7").textContent = "TDD- en E2E-testen"
-    document.getElementById("profile-l8").textContent = "FastAPI"
     document.getElementById("profile-l9").textContent = "Agile methodologie"
 
     document.getElementById("technologies-title").textContent = "Uitgelichte technologieën"

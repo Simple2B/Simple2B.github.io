@@ -136,7 +136,8 @@
   background-color: transparent;
   font-family: "Gentium Basic", serif;
   font-size: 18px;
-  color: #DDD12D;
+  color: white;
+  text-shadow: 0px 0px 4px black;
 }
 
 .burger,
