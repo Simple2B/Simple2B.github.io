@@ -74,6 +74,14 @@ function engLang() {
 
     document.getElementById("bio1").textContent = "Senior Software Engineer and Technical Lead with more than 25 years experience. Object-Oriented Analysis and Design, Design Patterns, Best Programming Practices in C++ and C#, TDD (Test Driven Development), Qt, Cloud Application(Azure), Agile development with Scrum, client/server programming, TCP/IP and web protocols, Windows system programming, Multi-threading & IPC, Web Services, Git, SVN, TFS, Perforce, DDK/WIN PE build environment (NT Build), CMake. Last years focused on Web Application development on Python and TypeScript for implementing solution for small and middle businesses."
     document.getElementById("bio2").textContent = "Sales & Human Relations enthusiast. Entrepreneur & Strategist. Innovation developer. I have 17 years of working experience in IT, Telecommunications & Financial industries in top global companies in managerial positions. With all my experience, I'm helping businesses of different sizes & spheres to solve pain points, embrace strong sides, and discover opportunities to grow."
+    document.getElementById("position1").textContent = "Lead Software Engineer"
+    document.getElementById("position2").textContent = "Software Engineer"
+    document.getElementById("position3").textContent = "Software Engineer"
+    document.getElementById("position4").textContent = "Software Engineer"
+    document.getElementById("position5").textContent = "Software Engineer"
+    document.getElementById("position6").textContent = "Software Engineer"
+    document.getElementById("position7").textContent = "Software Engineer"
+    document.getElementById("position8").textContent = "Software Engineer"
 
     // document.getElementById("join-title").textContent="Join us"
     // document.getElementById("join-title-back").textContent="Join us"
@@ -174,6 +182,14 @@ function dutchLang() {
 
     document.getElementById("bio1").textContent = "Senior Software Engineer en Technical Lead met meer dan 25 jaar ervaring. Objectgeoriënteerde analyse en ontwerp, ontwerppatronen, beste programmeerpraktijken in C++ en C#, TDD (Test Driven Development), Qt, Cloud Application (Azure), Agile-ontwikkeling met Scrum, client/server-programmering, TCP/IP en webprotocollen, Windows-systeemprogrammering, Multi-threading & IPC, Web Services, Git, SVN, TFS, Perforce, DDK/WIN PE-bouwomgeving (NT Build), CMake. De afgelopen jaren lag de focus op de ontwikkeling van webapplicaties op Python en TypeScript voor het implementeren van oplossingen voor het midden- en kleinbedrijf."
     document.getElementById("bio2").textContent = "Sales & Human Relations liefhebber. Ondernemer & Strateeg. Innovatie ontwikkelaar. Ik heb 17 jaar werkervaring in de IT-, telecommunicatie- en financiële sector bij internationale topbedrijven in leidinggevende functies. Met al mijn ervaring help ik bedrijven van verschillende groottes en sferen om pijnpunten op te lossen, sterke kanten te omarmen en kansen te ontdekken om te groeien."
+    document.getElementById("position1").textContent = "Leidende Software Ontwikkelaar"
+    document.getElementById("position2").textContent = "Software Ontwikkelaar"
+    document.getElementById("position3").textContent = "Software Ontwikkelaar"
+    document.getElementById("position4").textContent = "Software Ontwikkelaar"
+    document.getElementById("position5").textContent = "Software Ontwikkelaar"
+    document.getElementById("position6").textContent = "Software Ontwikkelaar"
+    document.getElementById("position7").textContent = "Software Ontwikkelaar"
+    document.getElementById("position8").textContent = "Software Ontwikkelaar"
 
     // document.getElementById("join-title").textContent="Doe met ons mee"
     // document.getElementById("join-title-back").textContent="Doe mee"

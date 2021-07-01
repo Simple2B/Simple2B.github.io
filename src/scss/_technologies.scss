@@ -130,6 +130,7 @@
 
   .technologies__content-text-l {
     max-width: 435px;
+    min-width: 300px;
     padding: 30px;
     padding-top: 93px;
   }
@@ -165,4 +166,14 @@
   .technologies__header-description {
     top: 185px;
   }
+}
+
+@media (max-width:350px) {
+  .technologies__content-text-l {
+    height: 355px;
+}
+
+.technologies__content-text {
+  height: 355px;
+}
 }
