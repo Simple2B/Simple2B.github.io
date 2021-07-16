@@ -13,6 +13,7 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
 const sourcemaps = require('gulp-sourcemaps');
+const hash = require('gulp-hash');
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -75,6 +76,7 @@ function modules() {
 function css() {
   return gulp
     .src("./src/scss/**/*.scss")
+    .pipe(hash())
     .pipe(plumber())
     .pipe(sass({
       outputStyle: "expanded",
@@ -102,6 +104,7 @@ function js() {
     .src([
       './src/js/*.js',
     ])
+    .pipe(hash())
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(header(banner, {
