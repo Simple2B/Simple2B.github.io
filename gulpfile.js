@@ -14,6 +14,7 @@ const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
 const sourcemaps = require('gulp-sourcemaps');
 const hash = require('gulp-hash');
+// const rev = require('gulp-rev');
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -76,7 +77,6 @@ function modules() {
 function css() {
   return gulp
     .src("./src/scss/**/*.scss")
-    .pipe(hash())
     .pipe(plumber())
     .pipe(sass({
       outputStyle: "expanded",
@@ -93,6 +93,11 @@ function css() {
     .pipe(rename({
       suffix: ".min"
     }))
+    // .pipe(gulp.dest('./src/css'))  // copy original assets to build dir
+    // .pipe(rev())
+    // .pipe(gulp.dest('./css'))  // write rev'd assets to build dir
+    // .pipe(rev.manifest())
+    // .pipe(gulp.dest('./css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
     .pipe(browsersync.stream());
@@ -104,7 +109,6 @@ function js() {
     .src([
       './src/js/*.js',
     ])
-    .pipe(hash())
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(header(banner, {
