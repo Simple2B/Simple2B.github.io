@@ -132,6 +132,8 @@
   gap: 15px;
   margin-bottom: 40px;
   flex-wrap: wrap;
+  z-index: 100;
+  position: relative;
 }
 
 /* The "show" class is added to the filtered elements */

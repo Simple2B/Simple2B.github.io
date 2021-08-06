@@ -121,6 +121,22 @@
 }
 
 
+@media (min-width: 2000px) {
+  .about__content-gallery-photo {
+    width: 500px;
+    height: 375px;
+  }
+}
+
+
+@media (min-width: 1550px) and (max-width: 1999px) {
+  .about__content-gallery-photo {
+    width: 460px;
+    height: 345px;
+  }
+}
+
+
 
 @media (max-width:970px) {
   .about__content-main-block {
