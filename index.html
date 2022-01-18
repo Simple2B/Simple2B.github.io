@@ -1071,13 +1071,14 @@
 
                 <div class="form__buttons">
                   <label for="chosenFile" class="button__attach"
-                    ><img src="/images/attachment-line.svg" />Attachment</label
+                    ><img id="file_label" src="/images/attachment-line.svg" />Attachment</label
                   >
                   <input
                     id="chosenFile"
                     name="chosenFile"
                     type="file"
                     class="attach"
+                    onchange="changeFileInput(event)"
                   />
 
                   <button
@@ -1088,6 +1089,7 @@
                     Send message
                   </button>
                 </div>
+                <p id="file_name"></p>
               </div>
 
               <div class="contact__form-right">
@@ -1177,7 +1179,11 @@
         });
       })();
     </script>
-
+    <script>
+      function changeFileInput(e){
+        $("#file_label").attr("src","/images/done_green.svg")
+      }
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
