@@ -33,13 +33,13 @@ $(function () {
       }
 
       fetch(`${TARGET_HOST}/send_message`, {
-          method: 'POST',
-          body: formData
-        })
+        method: 'POST',
+        body: formData
+      })
         .then((res) => {
           console.log(res)
           // Success message
-          if(res.status !== 200){
+          if (res.status !== 200) {
             console.log('error')
             throw new Error('not 200')
           }
@@ -53,6 +53,8 @@ $(function () {
             .append('</div>');
           //clear all fields
           $('#contactForm').trigger("reset");
+          $('#contactForm').removeClass("was-validated");
+          $("#file_label").attr("src","/images/attachment-line.svg")
         })
         .catch(error => {
           console.error(error);
@@ -76,7 +78,6 @@ $(function () {
       return $(this).is(":visible");
     },
   });
-
   $("a[data-toggle=\"tab\"]").click(function (e) {
     e.preventDefault();
     $(this).tab("show");
